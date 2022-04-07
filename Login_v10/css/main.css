@@ -2,36 +2,25 @@
 
 
 
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
-@font-face {
-  font-family: Ubuntu-Regular;
-  src: url('../fonts/ubuntu/Ubuntu-Regular.ttf'); 
-}
 
-@font-face {
-  font-family: Ubuntu-Bold;
-  src: url('../fonts/ubuntu/Ubuntu-Bold.ttf'); 
-}
-
-/*//////////////////////////////////////////////////////////////////
-[ RESTYLE TAG ]*/
 
 * {
 	margin: 0px; 
 	padding: 0px; 
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
 body, html {
 	height: 100%;
-	font-family: Ubuntu-Regular, sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Ubuntu-Regular;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -57,7 +46,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Ubuntu-Regular;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -120,7 +109,7 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 .txt1 {
-  font-family: Ubuntu-Regular;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #827ffe;
   line-height: 1.4;
@@ -172,7 +161,7 @@ iframe {
 }
 
 .login100-form-title {
-  font-family: Ubuntu-Bold;
+  font-family: 'Poppins', sans-serif;
   font-size: 30px;
   color: #403866;
   line-height: 1.2;
@@ -199,7 +188,7 @@ iframe {
 
 /*---------------------------------------------*/
 .input100 {
-  font-family: Ubuntu-Bold;
+  font-family: 'Poppins', sans-serif;
   color: #403866;
   line-height: 1.2;
   font-size: 18px;
@@ -270,7 +259,7 @@ iframe {
 }
 
 .label-checkbox100 {
-  font-family: Ubuntu-Regular;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #999999;
   line-height: 1.2;
@@ -327,7 +316,7 @@ iframe {
 }
 
 .login100-form-btn {
-  font-family: Ubuntu-Bold;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
@@ -381,7 +370,7 @@ iframe {
   right: 12px;
   pointer-events: none;
 
-  font-family: Ubuntu-Regular;
+  font-family: 'Poppins', sans-serif;
   color: #c80000;
   font-size: 14px;
   line-height: 1.4;
