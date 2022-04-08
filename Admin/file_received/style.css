@@ -154,9 +154,7 @@ body{
     height: 100px;
     background-color: white;
     margin: 10px 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #03254c;
+    border:1px solid #03254c;
 }
 
 .received_content .files .file .box{
@@ -177,12 +175,11 @@ body{
 
 .received_content .cards .card{
     width: 300px;
-    height: 200px;
+    height: 150px;
     background-color: white;
     margin: 10px 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #03254c;
+    border:1px solid #03254c;
+    display: flex;
 }
 
 .received_content .cards .card .box{
@@ -196,18 +193,21 @@ body{
 }
 
 .received_content .cards .card .icon{
+    width: 100px;
     padding: 20px 15px;
     display: block;
     align-items: center;
     flex-wrap: wrap;
-    border-color: #03254c;
+    border:1px solid #03254c;
 }
 
 .received_content .cards .card .num{
+    width: 200px;
     padding: 20px 15px;
-    display: block;
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
-    border-color: #03254c;
+    border:1px solid #03254c;
+    vertical-align: middle;
 }
 
