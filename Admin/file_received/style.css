@@ -195,3 +195,19 @@ body{
     left: 240px;
 }
 
+.received_content .cards .card .icon{
+    padding: 20px 15px;
+    display: block;
+    align-items: center;
+    flex-wrap: wrap;
+    border-color: #03254c;
+}
+
+.received_content .cards .card .num{
+    padding: 20px 15px;
+    display: block;
+    align-items: center;
+    flex-wrap: wrap;
+    border-color: #03254c;
+}
+
