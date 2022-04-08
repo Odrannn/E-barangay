@@ -108,6 +108,68 @@ body{
     text-align: center;
 }
 
+.sidebar .profile_content{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sidebar .profile_content .profile{
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+    background: #032c5a;
+}
+
+.profile_content .profile .profile_details{
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.sidebar.active .profile .profile_details{
+    opacity: 1;
+    pointer-events: auto;
+}
+.profile .profile_details img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.profile .profile_details .name_type{
+    margin-left: 10px;
+}
+
+.profile .profile_details .name{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.profile .profile_details .type{
+    font-size: 12px;
+}
+
+.profile #log_out{
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    min-width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.sidebar.active .profile #log_out{
+    left: 88%;
+}
+
 .sidebar .links_name{
     opacity: 0;
     pointer-events: none;
@@ -119,7 +181,7 @@ body{
     pointer-events: auto;
 }
 
-.dashboard_content{
+.send_content{
     color: #03254c;
     position: absolute;
     height: 100%;
@@ -129,44 +191,16 @@ body{
     overflow-y: auto;
 }
 
-.dashboard_content .text{
+.send_content .text{
     font-size: 25px;
     color: #1d1b31;
     margin: 12px;
     padding: 0 12px;
 } 
 
-.dashboard_content .cards{
-    padding: 20px 15px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
-.dashboard_content .cards .card{
-    width: 250px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 20px 10px;
-    border-radius: 8px;
-}
 
-.dashboard_content .cards .card .box{
-    text-align: center;
-    padding: 10px 20px;
-}
-
-.dashboard_content .cards .card:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-div.card img{
-    width: 250px;
-    border-radius: 8px 8px 0 0;
-    filter: brightness(50%);
-}
-
-.sidebar.active ~ .dashboard_content{
+.sidebar.active ~ .send_content{
     width: calc(100% - 240px);
     left: 240px;
 }
