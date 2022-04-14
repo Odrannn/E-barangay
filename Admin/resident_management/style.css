@@ -227,6 +227,23 @@ body{
     padding: 10px 10px;
     text-align: right;
 }
+.resman_content .resident_table .filter a{
+    color: #03254c;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 12px;
+    white-space: nowrap;
+}
+
+.resman_content .resident_table .filter i{
+    font-size: 28px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center;
+}
+
 
 .resman_content .resident_table .filter label{
     color: #000000;
@@ -285,7 +302,7 @@ table .bxs-x-circle{
     color: #ff5858;
 }
 
-table a:hover{
+.resman_content .resident_table a:hover{
     filter: brightness(50%);
 }
 
