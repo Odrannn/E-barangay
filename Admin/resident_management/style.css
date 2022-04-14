@@ -223,6 +223,35 @@ body{
     font-size: 26px;
 }
 
+.resman_content .resident_table .filter{
+    padding: 10px 10px;
+    text-align: right;
+}
+
+.resman_content .resident_table .filter label{
+    color: #000000;
+    display: inline-block;
+}
+
+
+.resman_content .resident_table .filter select{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.resman_content .resident_table .residents{
+    color: #000000;
+    margin: 10px 10px;
+}
+
+.resman_content .resident_table .residents th,td{
+    border:2px solid #000000;;
+}
+
 .resman_content .cards{
     padding: 20px 15px;
     display: block;
