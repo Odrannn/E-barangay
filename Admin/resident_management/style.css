@@ -306,6 +306,16 @@ table .bxs-x-circle{
     filter: brightness(50%);
 }
 
+.resman_content .resident_table .imex{
+    text-align: right;
+    margin: 10px;
+}
+
+.resman_content .resident_table .imex i{
+    font-size: 20px;
+    padding: 7px 15px;
+}
+
 .resman_content .cards{
     padding: 20px 15px;
     display: block;
