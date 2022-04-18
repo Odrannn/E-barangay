@@ -203,7 +203,7 @@ body{
 } 
 
 .companal_content .complaint_table{
-    width: 80%;
+    width: 100%;
     display: block;
     align-items: center;
     flex-wrap: wrap;
@@ -294,9 +294,16 @@ table .bxs-x-circle{
     padding: 7px 15px;
 }
 
+.companal_content .chart{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
 .companal_content .cards{
+    vertical-align: top;
     padding: 20px 15px;
-    display: block;
+    display: inline-block;
     align-items: center;
     flex-wrap: wrap;
 }

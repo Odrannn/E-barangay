@@ -13,16 +13,15 @@
       google.charts.setOnLoadCallback(drawChart);
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
+          ['Complaints', 'Total Complaints'],
+          ['Gossip Mongers',     11],
+          ['Dirty Barangay',      2],
+          ['Drugs',  2],
+          ['Noise', 2],
         ]);
 
         var options = {
-          title: 'My Daily Activities',
+          title: 'Most Complained',
           pieHole: 0.4,
         };
 
@@ -81,7 +80,44 @@
 
         <div class="text">Complaint Analysis</div>
         <hr>
-        <div id="donutchart" style="width: 900px; height: 500px;"></div>
+        <div class="graph">
+            <div class="cards">
+                <div class="card" style="background-color: rgb(27, 27, 27);">
+                    <div class="icon">
+                        <img src="../icons/popnum.png">
+                    </div>
+                    <div class="num">
+                        <div>
+                            <h1>421</h1>
+                            <p>Total</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-color: rgb(27, 27, 27);">
+                    <div class="icon">
+                        <img src="../icons/hnum.png">
+                    </div>
+                    <div class="num">
+                        <div>
+                            <h1>102</h1>
+                            <p>Pending</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-color: rgb(27, 27, 27);">
+                    <div class="icon">
+                        <img src="../icons/bnum.png">
+                    </div>
+                    <div class="num">
+                        <div>
+                            <h1>221</h1>
+                            <p>Solved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart" id="donutchart" style="width: 900px; height: 500px;"></div>
+        </div>
         <div class="content">
             <div class="complaint_table">
                 <div class="header">
@@ -152,41 +188,6 @@
                 <div class="imex">
                     <button class="button import"><i class='bx bx-import'></i></button>
                     <button class="button import"><i class='bx bx-export' ></i></button>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="card" style="background-color: rgb(27, 27, 27);">
-                    <div class="icon">
-                        <img src="../icons/popnum.png">
-                    </div>
-                    <div class="num">
-                        <div>
-                            <h1>421</h1>
-                            <p>Total</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" style="background-color: rgb(27, 27, 27);">
-                    <div class="icon">
-                        <img src="../icons/hnum.png">
-                    </div>
-                    <div class="num">
-                        <div>
-                            <h1>102</h1>
-                            <p>Pending</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" style="background-color: rgb(27, 27, 27);">
-                    <div class="icon">
-                        <img src="../icons/bnum.png">
-                    </div>
-                    <div class="num">
-                        <div>
-                            <h1>221</h1>
-                            <p>Solved</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
