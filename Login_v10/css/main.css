@@ -407,19 +407,23 @@ iframe {
   opacity: 1;
 }
 
-#residenttype {
-	left:0%;
-	font-family: 'Poppins', sans-serif;
-	
+.app-button{
+    background-color: #03254c;
+    width: 136px;
+    margin:0 20px;
+    display:inline-block;
+    line-height: 60px;
+	color:white;
 }
-
-#residenttype1 {
-	align:right;
-
-	font-family: 'Poppins', sans-serif;
-
+.row{
+  text-align:center;
+  /*the same margin which is every button have, it is for small screen, and if you have many buttons.*/
+  margin-left:-20px;
+  marin-right:-20px;
 }
-
+#register{
+	padding-bottom:0px;
+}
 
 @media (max-width: 992px) {
   .alert-validate::before {
