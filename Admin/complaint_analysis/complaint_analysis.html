@@ -18,6 +18,7 @@
           ['Dirty Barangay',      2],
           ['Drugs',  2],
           ['Noise', 2],
+          ['Others', 6],
         ]);
 
         var options = {
@@ -85,7 +86,7 @@
         <div class="cards">
             <div class="card" style="background-color: rgb(27, 27, 27);">
                 <div class="icon">
-                    <img src="../icons/popnum.png">
+                    <img src="../icons/totalcomplaint.png">
                 </div>
                 <div class="num">
                     <div>
@@ -96,7 +97,7 @@
             </div>
             <div class="card" style="background-color: rgb(27, 27, 27);">
                 <div class="icon">
-                    <img src="../icons/hnum.png">
+                    <img src="../icons/pendingcomplaints.png">
                 </div>
                 <div class="num">
                     <div>
@@ -107,7 +108,7 @@
             </div>
             <div class="card" style="background-color: rgb(27, 27, 27);">
                 <div class="icon">
-                    <img src="../icons/bnum.png">
+                    <img src="../icons/solvedcomplaints.png">
                 </div>
                 <div class="num">
                     <div>
@@ -148,13 +149,69 @@
                         </tr>
                         <tr>
                             <td>1</td>
+                            <td>None</td>
                             <td>1</td>
-                            <td>Mazo, Bernard K.</td>
-                            <td>March 27, 2001</td>
-                            <td>Manila</td>
-                            <td>21</td>
-                            <td>Sta. Cruz, Manila</td>
-                            <td>1</td>
+                            <td>Noise</td>
+                            <td>Noisy Neighbor</td>
+                            <td>4/19/22</td>
+                            <td>None</td>
+                            <td>Pending</td>
+                            <td>
+                                <a class="edit" href="#"><i class='bx bx-edit'></i></a>
+                                <a class="delete" href="#"><i class='bx bxs-x-circle' ></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>Drugs</td>
+                            <td>Drug addicts on streets</td>
+                            <td>12/11/21</td>
+                            <td>proof.jpg</td>
+                            <td>Solved</td>
+                            <td>
+                                <a class="edit" href="#"><i class='bx bx-edit'></i></a>
+                                <a class="delete" href="#"><i class='bx bxs-x-circle' ></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>Dirty Barangay</td>
+                            <td>Uncollected Garbage</td>
+                            <td>4/15/22</td>
+                            <td>purok2.jpg</td>
+                            <td>Solved</td>
+                            <td>
+                                <a class="edit" href="#"><i class='bx bx-edit'></i></a>
+                                <a class="delete" href="#"><i class='bx bxs-x-circle' ></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>None</td>
+                            <td>4</td>
+                            <td>Gossip Mongers</td>
+                            <td>Marites all over the streets</td>
+                            <td>4/15/22</td>
+                            <td>marites.jpg</td>
+                            <td>Pending</td>
+                            <td>
+                                <a class="edit" href="#"><i class='bx bx-edit'></i></a>
+                                <a class="delete" href="#"><i class='bx bxs-x-circle' ></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>None</td>
+                            <td>5</td>
+                            <td>Others</td>
+                            <td>Unwanted Smell on the streets</td>
+                            <td>4/15/22</td>
+                            <td>None</td>
+                            <td>Pending</td>
                             <td>
                                 <a class="edit" href="#"><i class='bx bx-edit'></i></a>
                                 <a class="delete" href="#"><i class='bx bxs-x-circle' ></i></a>
@@ -169,7 +226,7 @@
             </div>
         </div>
         <div class="graph">
-            <div class="chart" id="donutchart" style="width: 500px; height: 250px;"></div>
+            <div class="chart" id="donutchart" style="width: 500px; height: 300px;"></div>
         </div>
     </div>
 

@@ -291,7 +291,7 @@ table .bxs-x-circle{
 
 .companal_content .complaint_table .imex{
     text-align: right;
-    margin: 10px;
+    padding: 10px;
 }
 
 .companal_content .complaint_table .imex i{
@@ -357,4 +357,5 @@ table .bxs-x-circle{
 
 .graph{
     display: inline;
+    vertical-align: top;
 }
