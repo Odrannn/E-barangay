@@ -13,16 +13,16 @@
       google.charts.setOnLoadCallback(drawChart);
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Complaints', 'Total Complaints'],
-          ['Gossip Mongers',     11],
-          ['Dirty Barangay',      2],
-          ['Drugs',  2],
-          ['Noise', 2],
+          ['Suggestions', 'Total Suggestions'],
+          ['Barangay Improvement',     9],
+          ['Education',      3],
+          ['Sport',  10],
+          ['Health', 4],
           ['Others', 6],
         ]);
 
         var options = {
-          title: 'Most Complained',
+          title: 'Most Suggested',
           pieHole: 0.4,
         };
 
@@ -79,14 +79,13 @@
         </div>
     </div>
 
-    <div class="companal_content">
-
-        <div class="text">Complaint Analysis</div>
+    <div class="suganal_content">
+        <div class="text">Suggestion Analysis</div>
         <hr>
         <div class="cards">
             <div class="card" style="background-color: rgb(27, 27, 27);">
                 <div class="icon">
-                    <img src="../icons/totalcomplaint.png">
+                    <img src="../icons/totalsuggestions.png">
                 </div>
                 <div class="num">
                     <div>
@@ -106,22 +105,11 @@
                     </div>
                 </div>
             </div>
-            <div class="card" style="background-color: rgb(27, 27, 27);">
-                <div class="icon">
-                    <img src="../icons/solvedcomplaints.png">
-                </div>
-                <div class="num">
-                    <div>
-                        <h1>221</h1>
-                        <p>Solved</p>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="content">
-            <div class="complaint_table">
+            <div class="suggestion_table">
                 <div class="header">
-                    <p>Complaint List</p>
+                    <p>Suggestion List</p>
                 </div>
                 <div class="filter">
                     <form >
@@ -135,89 +123,78 @@
                         </select>
                     </form>
                 </div>
-                <div class="comtab">
-                    <table class="complaints">
+                <div class="sugtab">
+                    <table class="suggestions">
                         <tr>
                             <th>ID</th>
                             <th>Official In Charge</th>
                             <th>Resident ID</th>
-                            <th>Nature</th>
+                            <th>Category</th>
                             <th>Description</th>
                             <th>Date</th>
-                            <th>Proof</th>
-                            <th>Status</th>
+                            <th>Feedback</th>
                             <th>Actions</th>
                         </tr>
                         <tr>
                             <td>1</td>
                             <td>None</td>
                             <td>1</td>
-                            <td>Noise</td>
-                            <td>Noisy Neighbor</td>
+                            <td>Barangay Improvement</td>
+                            <td>Description</td>
                             <td>4/19/22</td>
                             <td>None</td>
-                            <td>Pending</td>
                             <td>
-                                <a class="edit" href="#"><i class='bx bx-edit'></i></a>
-                                <a class="delete" href="#"><i class='bx bxs-x-circle' ></i></a>
+                                <a class="edit" href="#"><i class='bx bx-reply'></i></a>
                             </td>
                         </tr>
                         <tr>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>2</td>
-                            <td>Drugs</td>
-                            <td>Drug addicts on streets</td>
-                            <td>12/11/21</td>
-                            <td>proof.jpg</td>
-                            <td>Solved</td>
-                            <td>
-                                <a class="edit" href="#"><i class='bx bx-edit'></i></a>
-                                <a class="delete" href="#"><i class='bx bxs-x-circle' ></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>5</td>
-                            <td>3</td>
-                            <td>Dirty Barangay</td>
-                            <td>Uncollected Garbage</td>
-                            <td>4/15/22</td>
-                            <td>purok2.jpg</td>
-                            <td>Solved</td>
-                            <td>
-                                <a class="edit" href="#"><i class='bx bx-edit'></i></a>
-                                <a class="delete" href="#"><i class='bx bxs-x-circle' ></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
+                            <td>1</td>
                             <td>None</td>
-                            <td>4</td>
-                            <td>Gossip Mongers</td>
-                            <td>Marites all over the streets</td>
-                            <td>4/15/22</td>
-                            <td>marites.jpg</td>
-                            <td>Pending</td>
+                            <td>1</td>
+                            <td>Barangay Improvement</td>
+                            <td>Description</td>
+                            <td>4/19/22</td>
+                            <td>None</td>
                             <td>
-                                <a class="edit" href="#"><i class='bx bx-edit'></i></a>
-                                <a class="delete" href="#"><i class='bx bxs-x-circle' ></i></a>
+                                <a class="edit" href="#"><i class='bx bx-reply'></i></a>
                             </td>
                         </tr>
                         <tr>
-                            <td>5</td>
+                            <td>1</td>
                             <td>None</td>
-                            <td>5</td>
-                            <td>Others</td>
-                            <td>Unwanted Smell on the streets</td>
-                            <td>4/15/22</td>
+                            <td>1</td>
+                            <td>Barangay Improvement</td>
+                            <td>Description</td>
+                            <td>4/19/22</td>
                             <td>None</td>
-                            <td>Pending</td>
                             <td>
-                                <a class="edit" href="#"><i class='bx bx-edit'></i></a>
-                                <a class="delete" href="#"><i class='bx bxs-x-circle' ></i></a>
+                                <a class="edit" href="#"><i class='bx bx-reply'></i></a>
                             </td>
                         </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>None</td>
+                            <td>1</td>
+                            <td>Barangay Improvement</td>
+                            <td>Description</td>
+                            <td>4/19/22</td>
+                            <td>None</td>
+                            <td>
+                                <a class="edit" href="#"><i class='bx bx-reply'></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>None</td>
+                            <td>1</td>
+                            <td>Barangay Improvement</td>
+                            <td>Description</td>
+                            <td>4/19/22</td>
+                            <td>None</td>
+                            <td>
+                                <a class="edit" href="#"><i class='bx bx-reply'></i></a>
+                            </td>
+                        </tr>   
                     </table>
                 </div>
                 <div class="imex">
