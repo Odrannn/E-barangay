@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Boxicons CDN Link -->
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-building-house'></i>
+                <div class="logo_name">Barangay</div>
+            </div>
+            <i class='bx bx-menu' id="btn_menu"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="../dashboard/dashboard.html">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="../file_received/file_received.html">
+                    <i class='bx bx-file' ></i>
+                    <span class="links_name">File Received</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="../announcement/announcement.html">
+                    <i class='bx bx-notification' ></i>
+                    <span class="links_name">Announcement</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="../icons/admin_pic.jpg">
+                    <div class="name_type">
+                        <div class="name">Bernard Mazo</div>
+                        <div class="type">Admin</div>
+                    </div>
+                </div>
+                <a href="../../Login_v10/index.html">
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="offman_content">
+        <div class="text">Official Management</div>
+        <hr>
+        <div class="content">
+            <div class="official_table">
+                <div class="header">
+                    <p>Official List
+                        <a href="#">
+                            <i class='bx bxs-plus-circle' style="float: right;"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="filter">
+                    <form >
+                        <label>Filter: </label>
+                        <select id="position" name="position">
+                            <option value="p">All</option>
+                            <option value="p1">Chairman</option>
+                            <option value="p2">Kagawad</option>
+                            <option value="p3">Secretary</option>
+                            <option value="p4">Healhcare Admin</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="offtab">
+                    <table class="officials">
+                        <tr>
+                            <th>ID</th>
+                            <th>Resident ID</th>
+                            <th>User ID</th>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Term_Start</th>
+                            <th>Term_End</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Johny Johny</td>
+                            <td>Kagawad</td>
+                            <td>2019</td>
+                            <td>2022</td>
+                            <td>Active</td>
+                            <td>
+                                <a class="edit" href="#"><i class='bx bx-edit'></i></a>
+                                <a class="delete" href="#"><i class='bx bxs-x-circle' ></i></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="imex">
+                    <button class="button import"><i class='bx bx-import'></i></button>
+                    <button class="button import"><i class='bx bx-export' ></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let btn_menu = document.querySelector("#btn_menu");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn_menu.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
