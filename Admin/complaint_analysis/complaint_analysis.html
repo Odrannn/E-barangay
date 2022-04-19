@@ -82,43 +82,40 @@
 
         <div class="text">Complaint Analysis</div>
         <hr>
-        <div class="graph">
-            <div class="cards">
-                <div class="card" style="background-color: rgb(27, 27, 27);">
-                    <div class="icon">
-                        <img src="../icons/popnum.png">
-                    </div>
-                    <div class="num">
-                        <div>
-                            <h1>421</h1>
-                            <p>Total</p>
-                        </div>
-                    </div>
+        <div class="cards">
+            <div class="card" style="background-color: rgb(27, 27, 27);">
+                <div class="icon">
+                    <img src="../icons/popnum.png">
                 </div>
-                <div class="card" style="background-color: rgb(27, 27, 27);">
-                    <div class="icon">
-                        <img src="../icons/hnum.png">
-                    </div>
-                    <div class="num">
-                        <div>
-                            <h1>102</h1>
-                            <p>Pending</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" style="background-color: rgb(27, 27, 27);">
-                    <div class="icon">
-                        <img src="../icons/bnum.png">
-                    </div>
-                    <div class="num">
-                        <div>
-                            <h1>221</h1>
-                            <p>Solved</p>
-                        </div>
+                <div class="num">
+                    <div>
+                        <h1>421</h1>
+                        <p>Total</p>
                     </div>
                 </div>
             </div>
-            <div class="chart" id="donutchart" style="width: 900px; height: 500px;"></div>
+            <div class="card" style="background-color: rgb(27, 27, 27);">
+                <div class="icon">
+                    <img src="../icons/hnum.png">
+                </div>
+                <div class="num">
+                    <div>
+                        <h1>102</h1>
+                        <p>Pending</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="background-color: rgb(27, 27, 27);">
+                <div class="icon">
+                    <img src="../icons/bnum.png">
+                </div>
+                <div class="num">
+                    <div>
+                        <h1>221</h1>
+                        <p>Solved</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="content">
             <div class="complaint_table">
@@ -140,23 +137,12 @@
                     <table class="complaints">
                         <tr>
                             <th>ID</th>
-                            <th>User ID</th>
-                            <th>Full Name</th>
-                            <th>Birthdate</th>
-                            <th>Birthplace</th>
-                            <th>Age</th>
-                            <th>Address</th>
-                            <th>Purok</th>
-                            <th>Household ID</th>
-                            <th>Disability</th>
-                            <th>Civil Status</th>
-                            <th>Occupation</th>
-                            <th>Religion</th>
-                            <th>Nationality</th>
-                            <th>Gender</th>
-                            <th>Educational Attainment</th>
-                            <th>Contact Number</th>
-                            <th>E-mail</th>
+                            <th>Official In Charge</th>
+                            <th>Resident ID</th>
+                            <th>Nature</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>Proof</th>
                             <th>Status</th>
                             <th>Actions</th>
                         </tr>
@@ -169,17 +155,6 @@
                             <td>21</td>
                             <td>Sta. Cruz, Manila</td>
                             <td>1</td>
-                            <td>1</td>
-                            <td>None</td>
-                            <td>Single</td>
-                            <td>None</td>
-                            <td>Catholic</td>
-                            <td>Filipino</td>
-                            <td>Male</td>
-                            <td>College</td>
-                            <td>09283523142</td>
-                            <td>bernard.mazo04@gmail.com</td>
-                            <td>Active</td>
                             <td>
                                 <a class="edit" href="#"><i class='bx bx-edit'></i></a>
                                 <a class="delete" href="#"><i class='bx bxs-x-circle' ></i></a>
@@ -192,6 +167,9 @@
                     <button class="button import"><i class='bx bx-export' ></i></button>
                 </div>
             </div>
+        </div>
+        <div class="graph">
+            <div class="chart" id="donutchart" style="width: 500px; height: 250px;"></div>
         </div>
     </div>
 

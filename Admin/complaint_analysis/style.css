@@ -196,7 +196,7 @@ body{
 }
 .content{
     padding: 20px 15px;
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
 }
 
@@ -208,7 +208,7 @@ body{
 } 
 
 .companal_content .complaint_table{
-    width: 100%;
+    width: 870px;
     display: block;
     align-items: center;
     flex-wrap: wrap;
@@ -250,9 +250,9 @@ body{
 table{
     width: 100%;
     border-collapse: collapse;
+    display: inline-block;
     table-layout: fixed;
     color: #000000;
-    display: block;
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -301,8 +301,6 @@ table .bxs-x-circle{
 
 .companal_content .chart{
     display: inline-block;
-    padding: 0;
-    margin: 0;
 }
 
 .companal_content .cards{
@@ -357,3 +355,6 @@ table .bxs-x-circle{
     vertical-align: middle;
 }
 
+.graph{
+    display: inline;
+}

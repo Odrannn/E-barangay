@@ -154,6 +154,11 @@ body{
     font-size: 12px;
 }
 
+.profile a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .profile #log_out{
     position: absolute;
     left: 50%;
