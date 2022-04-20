@@ -56,40 +56,42 @@
         </div>
     </div>
 
-    <div class="offman_content">
-        <div class="text">Official Management</div>
+    <div class="blotman_content">
+        <div class="text">Blotter Management</div>
         <hr>
         <div class="content">
-            <div class="official_table">
+            <div class="blotter_table">
                 <div class="header">
-                    <p>Official List
+                    <p>Blotter List
                         <a href="#">
                             <i class='bx bxs-plus-circle' style="float: right;"></i>
                         </a>
                     </p>
                 </div>
                 <div class="filter">
-                    <form >
+                    <form>
                         <label>Filter: </label>
-                        <select id="position" name="position">
+                        <select id="purok" name="purok">
                             <option value="p">All</option>
-                            <option value="p1">Chairman</option>
-                            <option value="p2">Kagawad</option>
-                            <option value="p3">Secretary</option>
-                            <option value="p4">Healhcare Admin</option>
+                            <option value="p1">Purok 1</option>
+                            <option value="p2">Purok 2</option>
+                            <option value="p3">Purok 3</option>
+                            <option value="p4">Purok 4</option>
                         </select>
                     </form>
                 </div>
-                <div class="offtab">
-                    <table class="officials">
+                <div class="blottab">
+                    <table class="blotters">
                         <tr>
                             <th>ID</th>
-                            <th>Resident ID</th>
-                            <th>User ID</th>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Term_Start</th>
-                            <th>Term_End</th>
+                            <th>Official in Charge</th>
+                            <th>Complainant ID</th>
+                            <th>Complainee ID</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Accusation</th>
+                            <th>Details</th>
+                            <th>Settlement Schedule</th>
                             <th>Status</th>
                             <th>Actions</th>
                         </tr>
@@ -97,12 +99,15 @@
                             <td>1</td>
                             <td>1</td>
                             <td>1</td>
-                            <td>Johny Johny</td>
-                            <td>Kagawad</td>
-                            <td>2019</td>
-                            <td>2022</td>
-                            <td>Active</td>
-                            <td style="text-align: center;">
+                            <td>1</td>
+                            <td>04/20/2022</td>
+                            <td>1:47pm</td>
+                            <td>Physical Harm</td>
+                            <td>The complainee punched the complainant in the face</td>
+                            <td>04/27/2022</td>
+                            <td>Scheduled</td>
+                            <td>
+                                <a class="set" href="#"><i class='bx bxs-calendar'></i></a>
                                 <a class="edit" href="#"><i class='bx bx-edit'></i></a>
                                 <a class="delete" href="#"><i class='bx bxs-x-circle' ></i></a>
                             </td>
@@ -112,6 +117,52 @@
                 <div class="imex">
                     <button class="button import"><i class='bx bx-import'></i></button>
                     <button class="button import"><i class='bx bx-export' ></i></button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card" style="background-color: rgb(27, 27, 27);">
+                    <div class="icon">
+                        <img src="../icons/popnum.png">
+                    </div>
+                    <div class="num">
+                        <div>
+                            <h1>421</h1>
+                            <p>Population</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-color: rgb(27, 27, 27);">
+                    <div class="icon">
+                        <img src="../icons/hnum.png">
+                    </div>
+                    <div class="num">
+                        <div>
+                            <h1>102</h1>
+                            <p>Household</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-color: rgb(27, 27, 27);">
+                    <div class="icon">
+                        <img src="../icons/bnum.png">
+                    </div>
+                    <div class="num">
+                        <div>
+                            <h1>221</h1>
+                            <p>Male</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="background-color: rgb(27, 27, 27);">
+                    <div class="icon">
+                        <img src="../icons/gnum.png">
+                    </div>
+                    <div class="num">
+                        <div>
+                            <h1>200</h1>
+                            <p>Female</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
