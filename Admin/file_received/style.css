@@ -291,3 +291,9 @@ body{
     vertical-align: middle;
 }
 
+div.files a{
+    text-decoration: none;
+}
+div.files a h3{
+    color: #03254c;
+}
