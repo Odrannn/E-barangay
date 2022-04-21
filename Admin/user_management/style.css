@@ -185,7 +185,7 @@ body{
     pointer-events: auto;
 }
 
-.offman_content{
+.usman_content{
     color: #03254c;
     position: absolute;
     height: 100%;
@@ -199,21 +199,21 @@ body{
     flex-wrap: wrap;
 }
 
-.offman_content .text{
+.usman_content .text{
     font-size: 25px;
     color: #1d1b31;
     margin: 12px;
     padding: 0 12px;
 } 
 
-.offman_content .official_table{
+.usman_content .user_table{
     width: 100%;
     display: block;
     flex-wrap: wrap;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.offman_content .official_table .header{
+.usman_content .user_table .header{
     padding: 10px 15px;
     color: rgb(0, 0, 0);
     background-color: #f0f0f0;
@@ -221,16 +221,16 @@ body{
     border-top-right-radius: 8px;
 }
 
-.offman_content .official_table .header i{
+.usman_content .user_table .header i{
     color:rgb(0, 158, 53);
     font-size: 26px;
 }
 
-.offman_content .official_table .filter{
+.usman_content .user_table .filter{
     padding: 10px 10px;
     text-align: right;
 }
-.offman_content .official_table .filter a{
+.usman_content .user_table .filter a{
     color: #03254c;
     display: flex;
     align-items: center;
@@ -239,7 +239,7 @@ body{
     white-space: nowrap;
 }
 
-.offman_content .official_table .filter i{
+.usman_content .user_table .filter i{
     font-size: 28px;
     min-width: 50px;
     border-radius: 12px;
@@ -248,13 +248,13 @@ body{
 }
 
 
-.offman_content .official_table .filter label{
+.usman_content .user_table .filter label{
     color: #000000;
     display: inline-block;
 }
 
 
-.offman_content .official_table .filter select{
+.usman_content .user_table .filter select{
     width: 100px;
     height: 30px;
     font-size: 16px;
@@ -263,7 +263,7 @@ body{
     background-color: #f0f0f0;
 }
 
-.offman_content .official_table .offtab{
+.usman_content .user_table .ustab{
     margin: 10px;
 }
 
@@ -306,21 +306,21 @@ table .bxs-x-circle{
     color: #ff5858;
 }
 
-.sidebar.active ~ .offman_content{
+.sidebar.active ~ .usman_content{
     width: calc(100% - 240px);
     left: 240px;
 }
 
-.offman_content .official_table a:hover{
+.usman_content .user_table a:hover{
     filter: brightness(50%);
 }
 
-.offman_content .official_table .imex{
+.usman_content .user_table .imex{
     text-align: right;
     padding: 10px;
 }
 
-.offman_content .official_table .imex i{
+.usman_content .user_table .imex i{
     font-size: 20px;
     padding: 7px 15px;
 }

@@ -185,7 +185,7 @@ body{
     pointer-events: auto;
 }
 
-.offman_content{
+.health_content{
     color: #03254c;
     position: absolute;
     height: 100%;
@@ -199,21 +199,21 @@ body{
     flex-wrap: wrap;
 }
 
-.offman_content .text{
+.health_content .text{
     font-size: 25px;
     color: #1d1b31;
     margin: 12px;
     padding: 0 12px;
 } 
 
-.offman_content .official_table{
+.health_content .treatment_table{
     width: 100%;
     display: block;
     flex-wrap: wrap;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.offman_content .official_table .header{
+.health_content .treatment_table .header{
     padding: 10px 15px;
     color: rgb(0, 0, 0);
     background-color: #f0f0f0;
@@ -221,16 +221,16 @@ body{
     border-top-right-radius: 8px;
 }
 
-.offman_content .official_table .header i{
+.health_content .treatment_table .header i{
     color:rgb(0, 158, 53);
     font-size: 26px;
 }
 
-.offman_content .official_table .filter{
+.health_content .treatment_table .filter{
     padding: 10px 10px;
     text-align: right;
 }
-.offman_content .official_table .filter a{
+.health_content .treatment_table .filter a{
     color: #03254c;
     display: flex;
     align-items: center;
@@ -239,7 +239,7 @@ body{
     white-space: nowrap;
 }
 
-.offman_content .official_table .filter i{
+.health_content .treatment_table .filter i{
     font-size: 28px;
     min-width: 50px;
     border-radius: 12px;
@@ -248,22 +248,24 @@ body{
 }
 
 
-.offman_content .official_table .filter label{
+.health_content .treatment_table .filter label{
     color: #000000;
     display: inline-block;
 }
 
 
-.offman_content .official_table .filter select{
-    width: 100px;
-    height: 30px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-}
+.health_content .treatment_table .filter input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 10px;
+    transition: width 0.4s ease-in-out;
+  }
 
-.offman_content .official_table .offtab{
+.health_content .treatment_table .treattab{
     margin: 10px;
 }
 
@@ -306,22 +308,46 @@ table .bxs-x-circle{
     color: #ff5858;
 }
 
-.sidebar.active ~ .offman_content{
+.sidebar.active ~ .health_content{
     width: calc(100% - 240px);
     left: 240px;
 }
 
-.offman_content .official_table a:hover{
+.health_content .treatment_table a:hover{
     filter: brightness(50%);
 }
 
-.offman_content .official_table .imex{
+.health_content .treatment_table .imex{
     text-align: right;
     padding: 10px;
 }
 
-.offman_content .official_table .imex i{
+.health_content .treatment_table .imex i{
     font-size: 20px;
     padding: 7px 15px;
 }
+
+div.availability{
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+}
+
+div.availability .status{
+    color:black;
+    background: url(../icons/health.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border:1px solid #000000;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+div.availability .status i{
+    text-decoration: none;
+    color: #03254c;
+}
+
+
 
