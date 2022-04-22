@@ -49,47 +49,69 @@
         </div>
     </div>
 
-    <div class="notification_content">
-        <div class="text">File Complaint</div>
+    <div class="request_content">
+        <div class="text">Request Document</div>
         <hr>
         <div class="content">
-            <p>Fill up the complaint form</p>
+            <p>Fill up the request form</p>
+            <br>
+            <div class="price">
+                <table>
+                    <tr>
+                        <th>Document</th>
+                        <th>Price(Php)</th>
+                    </tr>
+                    <tr>
+                        <td>Barangay Clearance</td>
+                        <td style="text-align:right">75.00</td>
+                    </tr>
+                    <tr>
+                        <td>Certificate of Indigency</td>
+                        <td style="text-align:right">75.00</td>
+                    </tr>
+                </table>
+            </div>
             <br>
             <form action="#">
                 <div class="row">
                   <div class="col-25">
-                    <label for="nature">Nature</label>
+                    <label for="type">Type of document</label>
                   </div>
                   <div class="col-75">
-                    <select id="nature" name="nature">
+                    <select id="category" name="category">
                         <option value="select">--Select--</option>
-                        <option value="gossip">Gossip Mongers</option>
-                        <option value="dirt">Dirty Barangay</option>
-                        <option value="drugs">Drugs</option>
-                        <option value="noise">Noise</option>
-                        <option value="others">Others</option>
+                        <option value="gossip">Barangay Clearance</option>
+                        <option value="dirt">Certificate of Indigency</option>
                     </select>
                   </div>
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="country">Proof</label>
+                        <label for="quantity">Quantity</label>
                     </div>
                     <div class="col-75">
-                        <input type="file" id="myFile" name="filename" style="vertical-align: middle;">
+                        <input type="number" id="quantity" name="quantity" min="1" max="5">
                     </div>
-                  </div>
+                </div>
                 <div class="row">
                   <div class="col-25">
-                    <label for="subject">Details</label>
+                    <label for="details">Purpose</label>
                   </div>
                   <div class="col-75">
                     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
                   </div>
                 </div>
+                <div class="row">
+                    <div class="col-25">
+                      <label for="details">Payment Receipt</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="file" id="myFile" name="filename" style="vertical-align: middle;">
+                    </div>
+                  </div>
                 <br>
                 <div class="row">
-                  <input type="submit" value="Submit">
+                    <input type="submit" value="Submit">
                 </div>
             </form>
         </div>

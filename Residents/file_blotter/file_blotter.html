@@ -49,39 +49,48 @@
         </div>
     </div>
 
-    <div class="notification_content">
-        <div class="text">File Complaint</div>
+    <div class="blotter_content">
+        <div class="text">File Blotter</div>
         <hr>
         <div class="content">
-            <p>Fill up the complaint form</p>
+            <p>Fill up the blotter form</p>
             <br>
             <form action="#">
                 <div class="row">
-                  <div class="col-25">
-                    <label for="nature">Nature</label>
-                  </div>
-                  <div class="col-75">
-                    <select id="nature" name="nature">
-                        <option value="select">--Select--</option>
-                        <option value="gossip">Gossip Mongers</option>
-                        <option value="dirt">Dirty Barangay</option>
-                        <option value="drugs">Drugs</option>
-                        <option value="noise">Noise</option>
-                        <option value="others">Others</option>
-                    </select>
-                  </div>
+                    <div class="col-25">
+                      <label for="fname">Complainee First Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="fname" name="firstname" placeholder="Complainee first name..">
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="country">Proof</label>
+                      <label for="lname">Complainee Last Name</label>
                     </div>
                     <div class="col-75">
-                        <input type="file" id="myFile" name="filename" style="vertical-align: middle;">
+                      <input type="text" id="lname" name="lastname" placeholder="Complainee last name..">
                     </div>
-                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                      <label for="contact">Complainee Contact #</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="lname" name="lastname" placeholder="Complainee contact number..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                      <label for="contact">Accusation</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="lname" name="lastname" placeholder="Accusation..">
+                    </div>
+                </div>
                 <div class="row">
                   <div class="col-25">
-                    <label for="subject">Details</label>
+                    <label for="details">Details</label>
                   </div>
                   <div class="col-75">
                     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>

@@ -186,7 +186,7 @@ body{
     pointer-events: auto;
 }
 
-.notification_content{
+.request_content{
     color: #03254c;
     position: absolute;
     height: 100%;
@@ -202,14 +202,14 @@ body{
     color: #000;
 }
 
-.notification_content .text{
+.request_content .text{
     font-size: 25px;
     color: #1d1b31;
     margin: 12px;
     padding: 0 12px;
 } 
 
-.sidebar.active ~ .notification_content{
+.sidebar.active ~ .request_content{
     width: calc(100% - 240px);
     left: 240px;
 }
@@ -222,7 +222,7 @@ div.files a h3{
     color: #03254c;
 }
 
-input[type=text], select, textarea {
+input[type=text],input[type=number], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -288,4 +288,15 @@ input[type=submit]:hover {
       width: 100%;
       margin-top: 0;
 }
+}
+
+.price table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.price table, th, td{
+    border-collapse: collapse;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
 }

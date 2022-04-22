@@ -49,39 +49,31 @@
         </div>
     </div>
 
-    <div class="notification_content">
-        <div class="text">File Complaint</div>
+    <div class="suggestion_content">
+        <div class="text">Send Suggestion</div>
         <hr>
         <div class="content">
-            <p>Fill up the complaint form</p>
+            <p>Fill up the suggestion form</p>
             <br>
             <form action="#">
                 <div class="row">
                   <div class="col-25">
-                    <label for="nature">Nature</label>
+                    <label for="category">Category</label>
                   </div>
                   <div class="col-75">
-                    <select id="nature" name="nature">
+                    <select id="category" name="category">
                         <option value="select">--Select--</option>
-                        <option value="gossip">Gossip Mongers</option>
-                        <option value="dirt">Dirty Barangay</option>
-                        <option value="drugs">Drugs</option>
-                        <option value="noise">Noise</option>
+                        <option value="gossip">Barangay Improvement</option>
+                        <option value="dirt">Education</option>
+                        <option value="drugs">Sport</option>
+                        <option value="noise">Health</option>
                         <option value="others">Others</option>
                     </select>
                   </div>
                 </div>
                 <div class="row">
-                    <div class="col-25">
-                        <label for="country">Proof</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="file" id="myFile" name="filename" style="vertical-align: middle;">
-                    </div>
-                  </div>
-                <div class="row">
                   <div class="col-25">
-                    <label for="subject">Details</label>
+                    <label for="details">Details</label>
                   </div>
                   <div class="col-75">
                     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>

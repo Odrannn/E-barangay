@@ -186,7 +186,7 @@ body{
     pointer-events: auto;
 }
 
-.notification_content{
+.blotter_content{
     color: #03254c;
     position: absolute;
     height: 100%;
@@ -202,14 +202,14 @@ body{
     color: #000;
 }
 
-.notification_content .text{
+.blotter_content .text{
     font-size: 25px;
     color: #1d1b31;
     margin: 12px;
     padding: 0 12px;
 } 
 
-.sidebar.active ~ .notification_content{
+.sidebar.active ~ .blotter_content{
     width: calc(100% - 240px);
     left: 240px;
 }
@@ -223,14 +223,6 @@ div.files a h3{
 }
 
 input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-input[type=file] {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -265,13 +257,13 @@ input[type=submit]:hover {
   
 .col-25 {
     float: left;
-    width: 20%;
+    width: 30%;
     margin-top: 6px;
 }
   
 .col-75 {
     float: left;
-    width: 80%;
+    width: 70%;
     margin-top: 6px;
 }
   
