@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Boxicons CDN Link -->
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-building-house'></i>
+                <div class="logo_name">E-Barangay</div>
+            </div>
+            <i class='bx bx-menu' id="btn_menu"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="../file_received/file_received.html">
+                    <i class='bx bxs-bell'></i>
+                    <span class="links_name">Notification</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="../icons/resident_pic.jpg">
+                    <div class="name_type">
+                        <div class="name">Charles Wilcent Urbano</div>
+                        <div class="type">Resident</div>
+                    </div>
+                </div>
+                <a href="../../Login_v10/index.html">
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard_content">
+        <div class="text">Dashboard</div>
+        <hr>
+        <div class="cards">
+            <div class="card">
+                <a href="../complaint_analysis/complaint_analysis.html">
+                <img src="../icons/complaint2.jpg">
+                <div class="box">
+                    <p>Complaint Analysis</p>
+                </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="../suggestion_analysis/suggestion_analysis.html">
+                <img src="../icons/suggestion.jpg">
+                <div class="box">
+                    <p>Suggestion Analysis</p>
+                </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="../document_request/document_request.html">
+                <img src="../icons/request.jpg">
+                <div class="box">
+                    <p>Request Verification</p>
+                </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="../blotter_management/blotter_management.html">
+                <img src="../icons/blotter.jpg">
+                <div class="box">
+                    <p>Blotter Management</p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let btn_menu = document.querySelector("#btn_menu");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn_menu.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
