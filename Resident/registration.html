@@ -10,64 +10,81 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
+
 <div class="BOX">
-<form class="needs-validation" novalidate>
-  <div class="form-row">
-	<div class="col-md-4 mb-3">
-		<label for="validationTooltip01">First name</label>
-		<input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value="Mark" required>
-		<div class="valid-tooltip">
-        Looks good!
-		</div>
-    </div>
-    <div class="col-md-4 mb-3">
-		<label for="validationTooltip02">Middle Name</label>
-		<input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" value="Otto" required>
-		<div class="valid-tooltip">
-		Looks good!
-		</div>
-    </div>
-	<div class="col-md-4 mb-3">
-		<label for="validationTooltip02">Last name</label>
-		<input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" value="Otto" required>
-		<div class="valid-tooltip">
-		Looks good!
-		</div>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label for="validationTooltip03">Birth Place</label>
-      <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
-      <div class="invalid-tooltip">
-        Please provide a valid city.
-      </div>
-    </div>
-	 <div class="col-md-2 mb-3">
-      <label for="validationTooltip03">DATE</label>
-      <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
-      <div class="invalid-tooltip">
-        Please provide a valid city.
-      </div>
-	</div>
-	<section class="container">
-  <h2 class="py-2">Datepicker in Bootstrap 5</h2>
-  <form class="row">
-    <label for="date" class="col-1 col-form-label">Date</label>
-    <div class="col-5">
-      <div class="input-group date" id="datepicker">
-        <input type="text" class="form-control" id="date"/>
-        <span class="input-group-append">
-          <span class="input-group-text bg-light d-block">
-            <i class="fa fa-calendar"></i>
-          </span>
-        </span>
-      </div>
-    </div>
-  </form>
-</section>
-  <button class="btn btn-primary" type="submit">Submit form</button>
-</form>
+	<form action="/action_page.php">
+		<table style="width:100%">
+			<tr>
+				<th>First Name</th>
+				<th>Middle Name</th>
+				<th>Last Name</th>
+				<th>Gender</th>
+			</tr>
+			<tr>
+				<td><input type="text" id="fname" name="fname" placeholder="First Name"></td>
+				<td><input type="text" id="mname" name="mname" placeholder="Middle Name"></td>
+				<td><input type="text" id="lname" name="lname" placeholder="Last Name"></td>
+				<td><label class="radio-inline">
+				<input type="radio" name="optradio">Male
+				</label>
+				&nbsp;
+				<label class="radio-inline">
+				<input type="radio" name="optradio">Female
+				</label>
+				</td>
+			</tr>
+			<tr>
+				<th>Place Birth</td>
+				<th></th>
+				<th>Birthday</td>
+				<th>Age</td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="text" id="birthplace" name="fname" placeholder="First Name"></td>
+				<td><input type="date" id="date" name="fname" placeholder="First Name"></td>
+				<td><input type="number" id="lname" name="lname" placeholder="Age"></td>
+			</tr>
+			<tr>
+				<th>Address</th>
+				<th></th>
+				<th>Purok</th>
+				<th>Status</th>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="text" id="address" name="fname" placeholder="Address"></td>
+				<td><select id="purokno" name="">
+					<option value="1">Purok Uno</option>
+					<option value="2">Purok Dos</option>
+					<option value="3">Purok Tres</option>
+					<option value="4">Purok Kwatro</option>
+					<option value="5">Purok Singko</option>
+					<option value="6">Purok Sais</option>
+					<option value="7">Purok Syete</option>
+					<option value="8">Purok Otso</option>
+					</select></td>
+				<td><select id="status" name="">
+					<option value="S">Single</option>
+					<option value="M">Married</option>
+					<option value="3">Windowed</option>
+					<option value="4">Divorced</option>
+					</select>
+				</td>
+			<tr>
+				<th>Contact Number</th>
+				<th>Email</th>
+				<th>Religion</th>
+				<th>Occupation</th>
+			</tr>
+			<tr>
+				<td><input type="number" id="fname" name="fname" placeholder="+63"></td>
+				<td><input type="text" id="mname" name="mname" placeholder="email"></td>
+				<td><input type="text" id="lname" name="lname" placeholder="religion"></td>
+				<td><input type="text" id="lname" name="lname" placeholder="occupacion"></td>
+			</tr>
+		</table>
+	</form> 	
+
+
 
 
 </DIV>

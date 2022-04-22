@@ -1,7 +1,25 @@
 .box{
-	border: 5px solid #FFFF00;
+	border: 5px solid black;
 	text-align: center;
 	padding:30px;
+	width:900px;
+	height:400px;
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	margin:auto;
 }	
-#inputEmail4{
+table{
+	padding:10px;
+}
+#date{
+	width:190px;
+}
+#birthplace{
+	width:400px;
+}
+#address{
+	width:400px;
 }
