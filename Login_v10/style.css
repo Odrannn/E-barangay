@@ -13,6 +13,10 @@
 }	
 table{
 	padding:10px;
+	margin:10px;
+}
+table, th, td {
+  border-collapse: collapse;
 }
 #date{
 	width:190px;
