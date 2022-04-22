@@ -13,30 +13,30 @@
 <div class="BOX">
 <form class="needs-validation" novalidate>
   <div class="form-row">
-    <div class="col-md-4 mb-3">
-      <label for="validationTooltip01">First name</label>
-      <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value="Mark" required>
-      <div class="valid-tooltip">
+	<div class="col-md-4 mb-3">
+		<label for="validationTooltip01">First name</label>
+		<input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value="Mark" required>
+		<div class="valid-tooltip">
         Looks good!
-      </div>
+		</div>
     </div>
     <div class="col-md-4 mb-3">
-      <label for="validationTooltip02">Middle Name</label>
-      <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" value="Otto" required>
-      <div class="valid-tooltip">
-        Looks good!
-      </div>
+		<label for="validationTooltip02">Middle Name</label>
+		<input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" value="Otto" required>
+		<div class="valid-tooltip">
+		Looks good!
+		</div>
     </div>
 	<div class="col-md-4 mb-3">
-      <label for="validationTooltip02">Last name</label>
-      <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" value="Otto" required>
-      <div class="valid-tooltip">
-        Looks good!
-      </div>
+		<label for="validationTooltip02">Last name</label>
+		<input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" value="Otto" required>
+		<div class="valid-tooltip">
+		Looks good!
+		</div>
     </div>
   </div>
   <div class="form-row">
-    <div class="col-md-10 mb-3">
+    <div class="col-md-6 mb-3">
       <label for="validationTooltip03">Birth Place</label>
       <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
       <div class="invalid-tooltip">
@@ -44,15 +44,28 @@
       </div>
     </div>
 	 <div class="col-md-2 mb-3">
-      <label for="validationTooltip03">Age</label>
+      <label for="validationTooltip03">DATE</label>
       <input type="text" class="form-control" id="validationTooltip03" placeholder="City" required>
       <div class="invalid-tooltip">
         Please provide a valid city.
       </div>
+	</div>
+	<section class="container">
+  <h2 class="py-2">Datepicker in Bootstrap 5</h2>
+  <form class="row">
+    <label for="date" class="col-1 col-form-label">Date</label>
+    <div class="col-5">
+      <div class="input-group date" id="datepicker">
+        <input type="text" class="form-control" id="date"/>
+        <span class="input-group-append">
+          <span class="input-group-text bg-light d-block">
+            <i class="fa fa-calendar"></i>
+          </span>
+        </span>
+      </div>
     </div>
-  
-	
-  </div>
+  </form>
+</section>
   <button class="btn btn-primary" type="submit">Submit form</button>
 </form>
 
