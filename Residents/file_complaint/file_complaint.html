@@ -19,7 +19,7 @@
         </div>
         <ul class="nav_list">
             <li>
-                <a href="#">
+                <a href="../dashboard/dashboard.html">
                     <i class='bx bxs-dashboard' ></i>
                     <span class="links_name">Dashboard</span>
                 </a>
@@ -49,65 +49,49 @@
         </div>
     </div>
 
-    <div class="dashboard_content">
-        <div class="text">Dashboard</div>
+    <div class="notification_content">
+        <div class="text">File Complaint</div>
         <hr>
-        <div class="cards">
-            <div class="card">
-                <a href="../file_complaint/file_complaint.html">
-                <img src="../icons/complaint2.jpg">
-                <div class="box">
-                    <p>File Complaint</p>
-                </div>
-                </a>
-            </div>
-            <div class="card">
-                <a href="../suggestion_analysis/suggestion_analysis.html">
-                <img src="../icons/suggestion.jpg">
-                <div class="box">
-                    <p>Send Suggestion</p>
-                </div>
-                </a>
-            </div>
-            <div class="card">
-                <a href="../document_request/document_request.html">
-                <img src="../icons/request.jpg">
-                <div class="box">
-                    <p>Request Document</p>
-                </div>
-                </a>
-            </div>
-            <div class="card">
-                <a href="../blotter_management/blotter_management.html">
-                <img src="../icons/blotter.jpg">
-                <div class="box">
-                    <p>File Blotter</p>
-                </div>
-                </a>
-            </div>
-        </div>
-        <div class="availability">
-            <div class="status">
-                <h1>Healthcare Center Availability</h1>
-                <br>
-                <h3>Doctor Availability: Available</h3>
-                <h3>Time Availability: 7am - 7pm</h3>
-            </div>
-        </div>
-
-        <div class="announcement">
-            <p>Announcements</p>
+        <div class="content">
+            <p>Fill up the complaint form</p>
             <br>
-            <div class="announcements">
-                <img src="../icons/barangayevent.jpg">
-                <div class="antext">
-                    <h1>Barangay Assembly</h1>
-                    <br>
-                    <p>Good day! We are inviting you to attend to our barangay program.</p>
-                    <p><b>What:</b> Barangay Assembly Day...</p>
-                    <a href="#"><p>See more...</p></p></a>
+            <form action="#">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="nature">Nature</label>
+                  </div>
+                  <div class="col-75">
+                    <select id="nature" name="nature">
+                        <option value="select">--Select--</option>
+                        <option value="gossip">Gossip Mongers</option>
+                        <option value="dirt">Dirty Barangay/option>
+                        <option value="drugs">Drugs</option>
+                        <option value="noise">Noise</option>
+                        <option value="others">Others</option>
+                    </select>
+                  </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Proof</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="file" id="myFile" name="filename" style="vertical-align: middle;">
+                    </div>
+                  </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="subject">Subject</label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <input type="submit" value="Submit">
+                </div>
+            </form>
         </div>
     </div>
 
