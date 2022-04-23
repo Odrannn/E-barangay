@@ -41,3 +41,9 @@ input[type=text],input[type=number], input[type=date], select{
     resize: vertical;
 }
 
+#confirmbtn{
+	font-size:19px;
+	display: flex;
+	justify-content: right;
+}
+
