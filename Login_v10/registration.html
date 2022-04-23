@@ -1,111 +1,133 @@
 <html lang="en">
 <head>
   
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-<div class="BOX">
-	<form action="/action_page.php">
-		<h1>REGISTRATION</h1>
-		<table style="width:100%">
-
-			<tr style="">
-				<th>First Name</th>
-				<th>Middle Name</th>
-				<th>Last Name</th>
-				<th>Gender</th>
-			</tr>
-			<tr>
-				<td><input type="text" id="fname" name="fname" placeholder="First Name"></td>
-				<td><input type="text" id="mname" name="mname" placeholder="Middle Name"></td>
-				<td><input type="text" id="lname" name="lname" placeholder="Last Name"></td>
-				<td><label class="radio-inline">
-				<input type="radio" name="optradio">Male
-				</label>
-				&nbsp;
-				<label class="radio-inline">
-				<input type="radio" name="optradio">Female
-				</label>
-				</td>
-			</tr>
-			<tr>
-				<th>Place Birth</td>
-				<th></th>
-				<th>Birthday</td>
-				<th>Age</td>
-			</tr>
-			<tr>
-				<td colspan="2"><input type="text" id="birthplace" name="fname" placeholder="First Name"></td>
-				<td><input type="date" id="date" name="fname" placeholder="First Name"></td>
-				<td><input type="number" id="lname" name="lname" placeholder="Age"></td>
-			</tr>
-			<tr>
-				<th>Address</th>
-				<th></th>
-				<th>Purok</th>
-				<th>Civil Status</th>
-			</tr>
-			<tr>
-				<td colspan="2"><input type="text" id="address" name="fname" placeholder="Address"></td>
-				<td><select id="purokno" name="">
-					<option value="1">Purok Uno</option>
-					<option value="2">Purok Dos</option>
-					<option value="3">Purok Tres</option>
-					<option value="4">Purok Kwatro</option>
-					<option value="5">Purok Singko</option>
-					<option value="6">Purok Sais</option>
-					<option value="7">Purok Syete</option>
-					<option value="8">Purok Otso</option>
-					</select></td>
-				<td><select id="status" name="">
-					<option value="S">Single</option>
-					<option value="M">Married</option>
-					<option value="3">Windowed</option>
-					<option value="4">Divorced</option>
-					</select>
-				</td>
-			<tr>
-				<th>Contact Number</th>
-				<th>Email</th>
-				<th>Religion</th>
-				<th>Occupation</th>
-			</tr>
-			<tr>
-				<td><input type="number" id="fname" name="fname" placeholder="+63"></td>
-				<td><input type="text" id="mname" name="mname" placeholder="Email"></td>
-				<td><input type="text" id="lname" name="lname" placeholder="Religion"></td>
-				<td><input type="text" id="lname" name="lname" placeholder="Occupacion"></td>
-			</tr>
-			<tr>
-				<th>Educational Attainment</th>
-				<th>Nationality</th>
-				<th>Disability</th>
-				<th>Status</th>
-			</tr>
-			<tr>
-				<td><select id="status" name="">
-					<option value="S">Less Than Highschool</option>
-					<option value="M">Hischool</option>
-					<option value="3">College</option>
-					<option value="4">Bachelor's Degree</option>
-					</select></td>
-				<td><input type="text" id="mname" name="mname" placeholder="Nationality"></td>
-				<td><input type="text" id="lname" name="lname" placeholder="Disability"></td>
-				<td><input type="text" id="lname" name="lname" placeholder="Status"></td>
-			</tr>
-		</table>
-	</form> 	
-
-
-
-
-</DIV>
+<div class="limiter">
+	<div class="container-login100">
+		<div class="reg_form">
+			<form action="/action_page.php">
+				<span class="login100-form-title p-b-51">
+					REGISTRATION
+				</span>
+				<table style="width:100%">
+					<tr>
+						<th>First Name</td>
+						<th>Middle Name</th>
+						<th>Last Name</td>
+						<th>Gender</td>
+					</tr>
+					<tr>
+						<td><input type="text" id="fname" name="fname" placeholder="First Name.."></td>
+						<td><input type="text" id="mname" name="mname" placeholder="Middle Name"></td>
+						<td><input type="text" id="lname" name="lname" placeholder="Last Name"></td>
+						<td><label class="radio-inline">
+						<input type="radio" name="optradio">Male
+						</label>
+						&nbsp;
+						<label class="radio-inline">
+						<input type="radio" name="optradio">Female
+						</label>
+						</td>
+					</tr>
+					<tr>
+						<th>Place Birth</td>
+						<th></th>
+						<th>Birthday</td>
+						<th>Age</td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="text" id="birthplace" name="fname" placeholder="First Name"></td>
+						<td><input type="date" id="date" name="fname"></td>
+						<td><input type="number" id="lname" name="lname" placeholder="Age"></td>
+					</tr>
+					<tr>
+						<th>Address</th>
+						<th></th>
+						<th>Purok</th>
+						<th>Civil Status</th>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="text" id="address" name="fname" placeholder="Address"></td>
+						<td><select id="purokno" name="">
+							<option value="1">Purok Uno</option>
+							<option value="2">Purok Dos</option>
+							<option value="3">Purok Tres</option>
+							<option value="4">Purok Kwatro</option>
+							<option value="5">Purok Singko</option>
+							<option value="6">Purok Sais</option>
+							<option value="7">Purok Syete</option>
+							<option value="8">Purok Otso</option>
+							</select></td>
+						<td><select id="status" name="">
+							<option value="S">Single</option>
+							<option value="M">Married</option>
+							<option value="3">Windowed</option>
+							<option value="4">Divorced</option>
+							</select>
+						</td>
+					<tr>
+						<th>Contact Number</th>
+						<th>Email</th>
+						<th>Religion</th>
+						<th>Occupation</th>
+					</tr>
+					<tr>
+						<td><input type="number" id="fname" name="fname" placeholder="+63"></td>
+						<td><input type="text" id="mname" name="mname" placeholder="Email"></td>
+						<td><input type="text" id="lname" name="lname" placeholder="Religion"></td>
+						<td><input type="text" id="lname" name="lname" placeholder="Occupacion"></td>
+					</tr>
+					<tr>
+						<th>Educational Attainment</th>
+						<th>Nationality</th>
+						<th>Disability</th>
+						<th>Status</th>
+					</tr>
+					<tr>
+						<td><select id="status" name="">
+							<option value="S">Less Than Highschool</option>
+							<option value="M">Hischool</option>
+							<option value="3">College</option>
+							<option value="4">Bachelor's Degree</option>
+							</select></td>
+						<td><input type="text" id="mname" name="mname" placeholder="Nationality"></td>
+						<td><input type="text" id="lname" name="lname" placeholder="Disability"></td>
+						<td><input type="text" id="lname" name="lname" placeholder="Status"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</div>
 </body>
 </html>
