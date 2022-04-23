@@ -144,7 +144,8 @@
                             <td>4/19/22</td>
                             <td>None</td>
                             <td>
-                                <a class="edit" href="#"><i class='bx bx-reply'></i></a>
+                                <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-mail-send'></i></i></a>
+                                <a class="delete" href="#" onclick="openPdelete()"><i class='bx bxs-x-circle'></i></a>
                             </td>
                         </tr>
                         <tr>
@@ -156,7 +157,8 @@
                             <td>4/19/22</td>
                             <td>None</td>
                             <td>
-                                <a class="edit" href="#"><i class='bx bx-reply'></i></a>
+                                <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-mail-send'></i></i></a>
+                                <a class="delete" href="#" onclick="openPdelete()"><i class='bx bxs-x-circle'></i></a>
                             </td>
                         </tr>
                         <tr>
@@ -168,7 +170,8 @@
                             <td>4/19/22</td>
                             <td>None</td>
                             <td>
-                                <a class="edit" href="#"><i class='bx bx-reply'></i></a>
+                                <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-mail-send'></i></i></a>
+                                <a class="delete" href="#" onclick="openPdelete()"><i class='bx bxs-x-circle'></i></a>
                             </td>
                         </tr>
                         <tr>
@@ -180,7 +183,8 @@
                             <td>4/19/22</td>
                             <td>None</td>
                             <td>
-                                <a class="edit" href="#"><i class='bx bx-reply'></i></a>
+                                <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-mail-send'></i></i></a>
+                                <a class="delete" href="#" onclick="openPdelete()"><i class='bx bxs-x-circle'></i></a>
                             </td>
                         </tr>
                         <tr>
@@ -192,7 +196,8 @@
                             <td>4/19/22</td>
                             <td>None</td>
                             <td>
-                                <a class="edit" href="#"><i class='bx bx-reply'></i></a>
+                                <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-mail-send'></i></i></a>
+                                <a class="delete" href="#" onclick="openPdelete()"><i class='bx bxs-x-circle'></i></a>
                             </td>
                         </tr>   
                     </table>
@@ -206,8 +211,76 @@
         <div class="graph">
             <div class="chart" id="donutchart" style="width: 500px; height: 300px;"></div>
         </div>
+        <div class="pedit" id="pedit">
+            <h2>Update Complaint</h2>
+            <div class="cinfo" style="text-align:left;">
+                <div class="row">
+                    <div class="col-25">
+                        <p>Category: </p>
+                    </div>
+                    <div class="col-75">
+                        <p>Barangay Improvement</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <p>Details: </p>
+                    </div>
+                    <div class="col-75">
+                        <p>Improve help distribution, it takes a lot of time to receive ayuda.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <p>Date: </p>
+                    </div>
+                    <div class="col-75">
+                        <p>4/19/22</p>
+                    </div>
+                </div>
+                <form action="#">
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="nature">Status:</label>
+                      </div>
+                      <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                      </div>
+                    </div>
+                </form>
+            </div>
+            <button type="button" class="save" onclick="closePedit()">Save</button>
+            <button type="button" class="cancel" onclick="closePedit()">Cancel</button>
+        </div>
+        <div class="pdelete" id="pdelete">
+            <h2>Delete Complaint</h2>
+            <p>Are you sure you want to delete this suggestion?</p>
+            <button type="button" class="confirm" onclick="closePdelete()">Confirm</button>
+            <button type="button" class="cancel" onclick="closePdelete()">Cancel</button>
+        </div>
     </div>
+    <script>
+        let pedit = document.getElementById("pedit");
 
+        function openPedit(){
+            pedit.classList.add("open-pedit");
+        }
+
+        function closePedit(){
+            pedit.classList.remove("open-pedit");
+        }
+    </script>
+    <script>
+        let pdelete = document.getElementById("pdelete");
+
+        function openPdelete(){
+            pdelete.classList.add("open-pdelete");
+        }
+
+        function closePdelete(){
+            pdelete.classList.remove("open-pdelete");
+        }
+    </script>
     <script>
         let btn_menu = document.querySelector("#btn_menu");
         let sidebar = document.querySelector(".sidebar");
