@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Boxicons CDN Link -->
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-building-house'></i>
+                <div class="logo_name">E-Barangay</div>
+            </div>
+            <i class='bx bx-menu' id="btn_menu"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="../notification/notification.html">
+                    <i class='bx bxs-bell'></i>
+                    <span class="links_name">Notification</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="../icons/resident_pic.jpg">
+                    <div class="name_type">
+                        <div class="name">Wilcent Urbano</div>
+                        <div class="type">Resident</div>
+                    </div>
+                </div>
+                <a href="../../Login_v10/index.html">
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard_content">
+        <div class="text"> <a href="../file_complaint/file_complaint.html">Dashboard</a>><a href="../file_complaint/file_complaint.html">Announcement</a></div>
+        <hr>
+        <div class="cards">
+            <div class="card">
+                <a href="../file_complaint/file_complaint.html">
+                <img src="../icons/complaint2.jpg">
+                <div class="box">
+                    <p>File Complaint</p>
+                </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="../send_suggestion/send_suggestion.html">
+                <img src="../icons/suggestion.jpg">
+                <div class="box">
+                    <p>Send Suggestion</p>
+                </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="../request_document/request_document.html">
+                <img src="../icons/request.jpg">
+                <div class="box">
+                    <p>Request Document</p>
+                </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="../file_blotter/file_blotter.html">
+                <img src="../icons/blotter.jpg">
+                <div class="box">
+                    <p>File Blotter</p>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="availability">
+            <div class="status">
+                <h1>Healthcare Center Availability</h1>
+                <br>
+                <h3>Doctor Availability: Available</h3>
+                <h3>Time Availability: 7am - 7pm</h3>
+            </div>
+        </div>
+
+        <div class="announcement">
+            <p>Announcements</p>
+            <br>
+            <div class="announcements">
+                <img src="../icons/barangayevent.jpg">
+                <div class="antext">
+                    <h1>Barangay Assembly</h1>
+                    <br>
+                    <p>Good day! We are inviting you to attend to our barangay program.</p>
+                    <p><b>What:</b> Barangay Assembly Day...</p>
+                    <a href="#"><p>See more...</p></p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let btn_menu = document.querySelector("#btn_menu");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn_menu.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
