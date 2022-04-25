@@ -279,11 +279,12 @@ label {
 .price table{
     border-collapse: collapse;
     width: 100%;
+
 }
 
 .price table, th, td{
     border-collapse: collapse;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid #ccc;
     padding: 5px;
 }
 
@@ -354,4 +355,8 @@ label {
 
 .btn_submit:hover {
     background-color: #005c3a;
+}
+
+.payment_method{
+    font-size: 16px;
 }
