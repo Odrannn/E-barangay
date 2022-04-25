@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Boxicons CDN Link -->
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-building-house'></i>
+                <div class="logo_name">E-Barangay</div>
+            </div>
+            <i class='bx bx-menu' id="btn_menu"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="../notification/notification.html">
+                    <i class='bx bxs-bell'></i>
+                    <span class="links_name">Notification</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="../icons/resident_pic.jpg">
+                    <div class="name_type">
+                        <div class="name">Wilcent Urbano</div>
+                        <div class="type">Resident</div>
+                    </div>
+                </div>
+                <a href="../../Login_v10/index.html">
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard_content">
+        <div class="text"> <a href="../dashboard/dashboard.html">Dashboard</a>> Barangay Assembly</div>
+        <hr>
+
+		<DIV class="www">
+		
+		<table>
+			<tr>
+				<tH style="padding:10px;">WHERE</tH>
+				<td style="padding:10px;">VENCHO'S COURT</td>
+			</tr>
+			<tr>
+				<tH style="padding:10px;">WHAT</tH>
+				<td style="padding:10px;">BARANGAY ASSEMBLY</td>
+			</tr>
+			<tr>
+				<tH style="padding:10px;">WHEN</tH>
+				<td style="padding:10px;">OCTOBER 28, 2022 <br> 8:00AM TO 10:00AM</td>
+			</tr>
+			<tr>
+				<tH style="padding:10px;">WHO</tH>
+				<td style="padding:10px;">EVERY BARANGAY RESIDENT</td>
+			</tr>
+		</table>
+		</DIV>
+		<br><br><br><br><br><br><br>
+		<hr>
+		<div class="body">
+		<h1 style="font-size:50px;text-align:center;">BARANGAY ASSEMBLY</h1>
+		<p>Section 397 of Republic Act No. 7160 otherwise known as the Local Government Code of 1991, mandates the barangay that there shall be a barangay assembly composed of all persons who are actual residents of the barangay for at least six (6) months, fifteen years of age or over, citizens of the Philippines and duly registered in the list of barangay assembly members.
+		<br><br>To institutionalize Barangay Assembly as a venue to promote accountability, transparency and interaction between and among barangay officials officials and residents, the Department issues Memorandum Circulars or related policies to remind the barangay officials of their mandate relative to the conduct of Barangay Assembly at least twice a year, in any Saturdays and Sundays of March and October in accordance with Proclamation No. 599 series of 2018.
+		<br><br>As the country remains to face the threat and challenges brought about by COVID-19 and the reported new COVID variant, public and mass gatherings or similar events may still be prohibited in some areas in the country.
+		<br><br>In this light, the face-to-face conduct of Barangay Assembly for the First Semester of CY 2021 may only be conducted in barangays without prevailing COVID issues taking into consideration the policies and guidelines of IATF-MEID pertaining to mass gathering or similar activities and local laws or ordinances in line with the implementation of quarantine protocols.
+		<br><br>While the national and local government units are committed in ensuring public service continuity, promote transparency, and the mandate to inform the public on the financial status and other issues affecting barangay, among others, the conduct of Barangay Assembly for the First Semester of CY 2021 may modified.
+		</p>
+		</div>
+
+	</div>
+
+    <script>
+        let btn_menu = document.querySelector("#btn_menu");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn_menu.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

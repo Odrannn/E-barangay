@@ -295,3 +295,28 @@ div.announcement .antext a{
     color:#03254c;
 }
 
+
+.header{
+	margin-left:20px;
+}
+.headerimg{
+	margin:20px;
+}
+
+.www{
+	font-size:20px;
+	width:500px;
+	height:150px;
+	margin:auto;
+}
+
+.body{
+	margin-top:60px;
+	padding-left:40px;
+	text-align:left;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin:10%;
+}
