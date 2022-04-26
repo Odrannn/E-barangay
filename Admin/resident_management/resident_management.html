@@ -64,7 +64,7 @@
                 <div class="header">
                     <p>Resident List
                         <a href="#">
-                            <i class='bx bxs-plus-circle' style="float: right;"></i>
+                            <i class='bx bxs-plus-circle' onclick="openPadd()" style="float: right;"></i>
                         </a>
                     </p>
                 </div>
@@ -463,12 +463,13 @@
                         </tr>
                         <tr>
                             <th>Place Birth</td>
-                            <th></th>
+                            <th>Household ID</th>
                             <th>Birthday</td>
                             <th>Age</td>
                         </tr>
                         <tr>
-                            <td colspan="2"><input type="text" id="birthplace" name="fname" placeholder="Birthpplace" value="Manila"></td>
+                            <td><input type="text" id="birthplace" name="fname" placeholder="Birthpplace" value="Manila"></td>
+                            <td><input type="text" id="birthplace" name="fname" placeholder="Household ID" value="1"></td>
                             <td><input type="date" id="date" value="2001-03-27" name="fname"></td>
                             <td><input type="number" id="lname" value="21" name="lname" placeholder="Age"></td>
                         </tr>
@@ -507,7 +508,7 @@
                             <td><input type="text" id="lname" name="lname" value="none" placeholder="Occupation"></td>
                         </tr>
                         <tr>
-                            <th>Educational Attainment</th>
+                            <th>Highest Educational Attainment</th>
                             <th>Nationality</th>
                             <th>Disability</th>
                             <th>Status</th>
@@ -540,6 +541,98 @@
             <button type="button" class="confirm" onclick="closePdelete()">Confirm</button>
             <button type="button" class="cancel" onclick="closePdelete()">Cancel</button>
         </div>
+        <div class="padd" id="padd">
+            <h2>Add Resident</h2>
+            <div class="reg_form">
+                <form>
+                    <table style="width:100%">
+                        <tr>
+                            <th>First Name</td>
+                            <th>Middle Name</th>
+                            <th>Last Name</td>
+                            <th>Gender</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="fname" name="fname" placeholder="First Name.."></td>
+                            <td><input type="text" id="mname" name="mname" placeholder="Middle Name"></td>
+                            <td><input type="text" id="lname" name="lname" placeholder="Last Name"></td>
+                            <td><label class="radio-inline">
+                            <input type="radio" name="optradio">Male
+                            </label>
+                            &nbsp;
+                            <label class="radio-inline">
+                            <input type="radio" name="optradio">Female
+                            </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Place Birth</td>
+                            <th>Household ID</th>
+                            <th>Birthday</td>
+                            <th>Age</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="birthplace" name="fname" placeholder="Birthplace"></td>
+                            <td><input type="text" id="birthplace" name="fname" placeholder="Household ID"></td>
+                            <td><input type="date" id="date" name="fname"></td>
+                            <td><input type="number" id="lname" name="lname" placeholder="Age"></td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <th></th>
+                            <th>Purok</th>
+                            <th>Civil Status</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" id="address" name="fname" placeholder="Address"></td>
+                            <td><select id="purokno" name="">
+                                <option value="1">Purok 1</option>
+                                <option value="2">Purok 2</option>
+                                <option value="3">Purok 3</option>
+                                <option value="4">Purok 4</option>
+                                <option value="5">Purok 5</option>
+                                </select></td>
+                            <td><select id="status" name="">
+                                <option value="S">Single</option>
+                                <option value="M">Married</option>
+                                <option value="3">Windowed</option>
+                                <option value="4">Divorced</option>
+                                </select>
+                            </td>
+                        <tr>
+                            <th>Contact Number</th>
+                            <th>Email</th>
+                            <th>Religion</th>
+                            <th>Occupation</th>
+                        </tr>
+                        <tr>
+                            <td><input type="number" id="fname" name="fname" placeholder="+63"></td>
+                            <td><input type="text" id="mname" name="mname" placeholder="Email"></td>
+                            <td><input type="text" id="lname" name="lname" placeholder="Religion"></td>
+                            <td><input type="text" id="lname" name="lname" placeholder="Occupation"></td>
+                        </tr>
+                        <tr>
+                            <th>Highest Educational Attainment</th>
+                            <th>Nationality</th>
+                            <th>Disability</th>
+                        </tr>
+                        <tr>
+                            <td><select id="status" name="">
+                                <option value="3">Select</option>
+                                <option value="3">College</option>
+                                <option value="S">Less Than Highschool</option>
+                                <option value="M">Hischool</option>
+                                <option value="4">Bachelor's Degree</option>
+                                </select></td>
+                            <td><input type="text" id="mname" name="mname" placeholder="Nationality"></td>
+                            <td><input type="text" id="lname" name="lname" placeholder="Disability"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <button type="button" class="save" onclick="closePadd()">Save</button>
+            <button type="button" class="cancel" onclick="closePadd()">Cancel</button>
+        </div>
     </div>
     <script>
         let pedit = document.getElementById("pedit");
@@ -550,6 +643,17 @@
 
         function closePedit(){
             pedit.classList.remove("open-pedit");
+        }
+    </script>
+    <script>
+        let padd = document.getElementById("padd");
+
+        function openPadd(){
+            padd.classList.add("open-padd");
+        }
+
+        function closePadd(){
+            padd.classList.remove("open-padd");
         }
     </script>
     <script>
