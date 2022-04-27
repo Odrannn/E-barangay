@@ -442,8 +442,8 @@ body{
 }
 
 .pedit table{
-	padding:10px;
-	margin:10px;
+	padding:0px;
+	margin:0px;
 }
 .pedit table, th, td {
     border: none;
@@ -455,7 +455,6 @@ body{
 .pedit th{
 	font-size: 12px;
     text-align: left;
-	padding-left: 15px;
 }
 
 #date{
