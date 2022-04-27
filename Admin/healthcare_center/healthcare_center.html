@@ -76,7 +76,7 @@
                 <div class="header">
                     <p>Healthcare Logs
                         <a href="#">
-                            <i class='bx bxs-plus-circle' style="float: right;"></i>
+                            <i class='bx bxs-plus-circle' style="float: right;" onclick="openPadd()"></i>
                         </a>
                     </p>
                 </div>
@@ -192,8 +192,41 @@
                 </div>
             </div>
         </div>
+        <div class="padd" id="padd">
+            <h2>Add Record</h2>
+            <div class="reg_form">
+                <form>
+                    <table style="width:100%">
+                        <tr>
+                            <th>Resident ID</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" id="fname" name="fname" placeholder="ID.."></td>
+                        </tr>
+                        <tr>
+                            <th>Reason For Visit</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><textarea id="mname" name="mname" placeholder=" Write something..." style="width:100%;" rows="4"></textarea></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <button type="button" class="save" onclick="closePadd()">Save</button>
+            <button type="button" class="cancel" onclick="closePadd()">Cancel</button>
+        </div>
     </div>
+    <script>
+        let padd = document.getElementById("padd");
 
+        function openPadd(){
+            padd.classList.add("open-padd");
+        }
+
+        function closePadd(){
+            padd.classList.remove("open-padd");
+        }
+    </script>
     <script>
         let btn_menu = document.querySelector("#btn_menu");
         let sidebar = document.querySelector(".sidebar");
