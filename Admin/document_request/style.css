@@ -278,7 +278,7 @@ body{
     transition: width 0.4s ease-in-out;
 }
 
-table{
+.request_table table{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -289,35 +289,35 @@ table{
     white-space: nowrap;
 }
 
-table, th,td{
+.request_table table, th,td{
     border:1px solid #000000;
     font-size: 13px;
     padding: 10px;
 }
 
-th{
+.request_table th{
     background-color: #335ed6;
     color: #ffffff;
 }
 
-tr:nth-child(even){background-color: #f2f2f2;}
+.request_table tr:nth-child(even){background-color: #f2f2f2;}
 
-tr:hover {background-color: #ddd;}
+.request_table tr:hover {background-color: #ddd;}
 
-table i{
+.request_table table i{
     text-align: center;
     font-size: 20px;
 }
 
-table .bx-edit{
+.request_table table .bx-edit{
     color: #c7ad17;
 }
 
-table .bx-detail{
+.request_table table .bx-detail{
     color: #425eff;
 }
 
-table .bxs-x-circle{
+.request_table table .bxs-x-circle{
     color: #ff5858;
 }
 
@@ -340,3 +340,167 @@ table .bxs-x-circle{
     padding: 7px 15px;
 }
 
+.pdelete{
+    width: 500px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
+}
+
+.pdelete h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin:30px 0 10px;
+}
+
+.pdelete p{
+    margin:0 0 10px 0;
+}
+
+.pdelete button.confirm{
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px 0;
+    background: #04AA6D;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
+}
+.pdelete button.cancel{
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px 0;
+    background: #aa0404;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
+}
+
+.pdelete button.confirm:hover {
+    background-color: #005c3a;
+}
+
+.pdelete button.cancel:hover {
+    background-color: #5c0000;
+}
+
+
+.open-pdelete{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.pedit{
+    width: 500px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    transition: transform 0.4s, top 0.4s;
+    visibility: hidden;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
+}
+
+.pedit h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin:30px 0 10px;
+}
+
+.pedit button.save{
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px 0;
+    background: #04AA6D;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
+}
+.pedit button.cancel{
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px 0;
+    background: #aa0404;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
+}
+
+.pedit button.save:hover {
+    background-color: #005c3a;
+}
+
+.pedit button.cancel:hover {
+    background-color: #5c0000;
+}
+
+.open-pedit{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+.pedit table, th, td {
+    border: none;
+    border-collapse: collapse;
+    padding:10px;
+    text-align: left;
+  
+}
+
+.pedit th{
+	font-size: 12px;
+    text-align: left;
+}
+
+#date{
+	width:100%;
+}
+#birthplace{
+	width:100%;
+}
+#address{
+	width:100%;
+}
+
+.pedit div.reg_form{
+	padding: 20px;
+}
+
+.pedit input[type=text],input[type=number], input[type=date], .pedit select{
+	width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
