@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+.BODY{
+    width:2550px;
+	height:3300px;
+	border-style:solid;
+	margin:auto;
+}
+H1{
+	text-align:center;
+	letter-spacing: 5px;
+	font-size:80px;
+}
+H3{
+	text-align:center;
+	font-size:50px;
+	margin-top:150px;
+}
+
+H2{
+	margin-left:192px;
+	margin-right:192px;
+	font-size:50px;
+}
+
+P{
+	margin-left:192px;
+	margin-right:192px;
+	font-size:36px;
+	text-align: justify;
+    text-justify: inter-word;
+
+}
+.right{
+	float:right;
+	margin-top:50px;
+	margin-right:200px;
+	width:400px;
+	height:400px;
+
+
+}
+.left{
+	float:left;
+	margin-top:50px;
+	margin-left:200px;
+	width:400px;
+	height:400px;
+
+}
+
+hr{
+	height:10px;
+	background-color: black;
+		
+}
+P{
+	font-size:60px;
+}
+.chairman{
+	margin-right:190px;
+	text-align:right;
+	margin-bottom:0px;
+}
+
+
+.resident{
+	margin-left:170px;
+	text-align:left;
+	margin-bottom:0px;
+}
+.residentname{
+	margin-left:190px;
+	text-align:left;
+	margin-top:0px;
+	text-decoration: overline;
+	font-size:50px;
+}
+H4{
+	margin-right:200px;
+	text-align:right;
+	font-size:50px;
+	text-decoration: overline;
+	margin-top:0px;
+}
