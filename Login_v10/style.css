@@ -47,6 +47,11 @@ input[type=text],input[type=number], input[type=date], select{
 	justify-content: right;
 }
 
+div.consent{
+	width: 1000px;
+	padding: 20px;
+}
+
 body {
   background-repeat: no-repeat;
   background-attachment: fixed;
