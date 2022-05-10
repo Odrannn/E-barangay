@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Boxicons CDN Link -->
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Complaints', 'Total Complaints'],
+          ['Gossip Mongers',     11],
+          ['Dirty Barangay',      2],
+          ['Drugs',  2],
+          ['Noise', 2],
+          ['Others', 6],
+        ]);
+
+        var options = {
+          title: 'Most Complained',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Suggestions', 'Total Suggestions'],
+            ['Barangay Improvement',     9],
+            ['Education',      3],
+            ['Sport',  10],
+            ['Health', 4],
+            ['Others', 6],
+          ]);
+  
+          var options = {
+            title: 'Most Suggested',
+            pieHole: 0.4,
+          };
+  
+          var chart = new google.visualization.PieChart(document.getElementById('sugdonutchart'));
+          chart.draw(data, options);
+        }
+      </script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-building-house'></i>
+                <div class="logo_name">E-Barangay</div>
+            </div>
+            <i class='bx bx-menu' id="btn_menu"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="../dashboard/dashboard.html">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="../file_received/file_received.html">
+                    <i class='bx bx-file' ></i>
+                    <span class="links_name">File Received</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+            <li>
+                <a href="../announcement/announcement.html">
+                    <i class='bx bx-notification' ></i>
+                    <span class="links_name">Announcement</span>
+                </a>
+                <!--<span class="tooltip">Dashboard</span>-->
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="../icons/admin_pic.jpg">
+                    <div class="name_type">
+                        <div class="name">Bernard Mazo</div>
+                        <div class="type">Admin</div>
+                    </div>
+                </div>
+                <a href="../../Login_v10/index.html">
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="companal_content">
+
+        <div class="text">Case Management</div>
+        <hr>
+        <br>
+        <div class="text" style="text-align: center;">Complaint Analysis</div>
+        <div class="cards">
+            <div class="card" style="background-color: rgb(27, 27, 27);">
+                <div class="icon">
+                    <img src="../icons/totalcomplaint.png">
+                </div>
+                <div class="num">
+                    <div>
+                        <h1>421</h1>
+                        <p>Total</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="background-color: rgb(27, 27, 27);">
+                <div class="icon">
+                    <img src="../icons/pendingcomplaints.png">
+                </div>
+                <div class="num">
+                    <div>
+                        <h1>102</h1>
+                        <p>Pending</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="background-color: rgb(27, 27, 27);">
+                <div class="icon">
+                    <img src="../icons/solvedcomplaints.png">
+                </div>
+                <div class="num">
+                    <div>
+                        <h1>221</h1>
+                        <p>Solved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="complaint_table">
+                <div class="header">
+                    <p>Complaint List</p>
+                </div>
+                <div class="filter">
+                    <form >
+                        <label>Filter: </label>
+                        <select id="filter" name="filter">
+                            <option value="f1">2022</option>
+                            <option value="f2">2021</option>
+                            <option value="f3">2020</option>
+                            <option value="f4">2019</option>
+                            <option value="f5">2018</option>
+                        </select>
+                        <select id="filter" name="filter">
+                            <option value="f1">All</option>
+                            <option value="f2">Daily</option>
+                            <option value="f3">Weekly</option>
+                            <option value="f4">Monthly</option>
+                            <option value="f5">Yearly</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="comtab">
+                    <table class="complaints">
+                        <tr>
+                            <th>ID</th>
+                            <th>Official In Charge</th>
+                            <th>Resident ID</th>
+                            <th>Nature</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>Proof</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>None</td>
+                            <td>1</td>
+                            <td>Noise</td>
+                            <td>Noisy Neighbor</td>
+                            <td>4/19/22</td>
+                            <td>None</td>
+                            <td>Pending</td>
+                            <td>
+                                <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-edit'></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>Drugs</td>
+                            <td>Drug addicts on streets</td>
+                            <td>12/11/21</td>
+                            <td>proof.jpg</td>
+                            <td>Solved</td>
+                            <td>
+                                <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-edit'></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>Dirty Barangay</td>
+                            <td>Uncollected Garbage</td>
+                            <td>4/15/22</td>
+                            <td>purok2.jpg</td>
+                            <td>Solved</td>
+                            <td>
+                                <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-edit'></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>None</td>
+                            <td>4</td>
+                            <td>Gossip Mongers</td>
+                            <td>Marites all over the streets</td>
+                            <td>4/15/22</td>
+                            <td>marites.jpg</td>
+                            <td>Pending</td>
+                            <td>
+                                <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-edit'></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>None</td>
+                            <td>5</td>
+                            <td>Others</td>
+                            <td>Unwanted Smell on the streets</td>
+                            <td>4/15/22</td>
+                            <td>None</td>
+                            <td>Pending</td>
+                            <td>
+                                <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-edit'></i></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="imex">
+                    <button class="button import"><i class='bx bx-import'></i></button>
+                    <button class="button import"><i class='bx bx-export' ></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="graph">
+            <div class="chart" id="donutchart" style="width: 500px; height: 300px;"></div>
+        </div>
+        <div class="pedit" id="pedit">
+            <h2>Update Complaint</h2>
+            <div class="cinfo" style="text-align:left;">
+                <div class="row">
+                    <div class="col-25">
+                        <p>Nature: </p>
+                    </div>
+                    <div class="col-75">
+                        <p>Noise</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <p>Description: </p>
+                    </div>
+                    <div class="col-75">
+                        <p>Noisy Neighbor (Al Rashied Idris)</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <p>Date: </p>
+                    </div>
+                    <div class="col-75">
+                        <p>4/19/22</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <p>Proof: </p>
+                    </div>
+                    <div class="col-75">
+                        <p>None</p>
+                    </div>
+                </div>
+                <form action="#">
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="nature">Status:</label>
+                      </div>
+                      <div class="col-75">
+                        <select id="status" name="status">
+                            <option value="pending">Pending</option>
+                            <option value="solved">Solved</option>
+                        </select>
+                      </div>
+                    </div>
+                </form>
+            </div>
+            <button type="button" onclick="closePedit()">Save</button>
+        </div>
+        <br>
+        <div class="text" style="text-align: center;">Suggestion Analysis</div>
+        <div class="cards">
+            <div class="card" style="background-color: rgb(27, 27, 27);">
+                <div class="icon">
+                    <img src="../icons/totalsuggestions.png">
+                </div>
+                <div class="num">
+                    <div>
+                        <h1>421</h1>
+                        <p>Total</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="background-color: rgb(27, 27, 27);">
+                <div class="icon">
+                    <img src="../icons/pendingcomplaints.png">
+                </div>
+                <div class="num">
+                    <div>
+                        <h1>102</h1>
+                        <p>Pending</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="suggestion_table">
+                <div class="header">
+                    <p>Suggestion List</p>
+                </div>
+                <div class="filter">
+                    <form >
+                        <label>Filter: </label>
+                        <select id="filter" name="filter">
+                            <option value="f1">2022</option>
+                            <option value="f2">2021</option>
+                            <option value="f3">2020</option>
+                            <option value="f4">2019</option>
+                            <option value="f5">2018</option>
+                        </select>
+                        <select id="filter" name="filter">
+                            <option value="f1">All</option>
+                            <option value="f2">Daily</option>
+                            <option value="f3">Weekly</option>
+                            <option value="f4">Monthly</option>
+                            <option value="f5">Yearly</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="sugtab">
+                    <table class="suggestions">
+                        <tr>
+                            <th>ID</th>
+                            <th>Official In Charge</th>
+                            <th>Resident ID</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>Feedback</th>
+                            <th>Actions</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>None</td>
+                            <td>1</td>
+                            <td>Barangay Improvement</td>
+                            <td>Description</td>
+                            <td>4/19/22</td>
+                            <td>None</td>
+                            <td>
+                                <a class="edit" href="#" onclick="openPedits()"><i class='bx bx-mail-send'></i></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>None</td>
+                            <td>1</td>
+                            <td>Barangay Improvement</td>
+                            <td>Description</td>
+                            <td>4/19/22</td>
+                            <td>None</td>
+                            <td>
+                                <a class="edit" href="#" onclick="openPedits()"><i class='bx bx-mail-send'></i></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>None</td>
+                            <td>1</td>
+                            <td>Barangay Improvement</td>
+                            <td>Description</td>
+                            <td>4/19/22</td>
+                            <td>None</td>
+                            <td>
+                                <a class="edit" href="#" onclick="openPedits()"><i class='bx bx-mail-send'></i></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>None</td>
+                            <td>1</td>
+                            <td>Barangay Improvement</td>
+                            <td>Description</td>
+                            <td>4/19/22</td>
+                            <td>None</td>
+                            <td>
+                                <a class="edit" href="#" onclick="openPedits()"><i class='bx bx-mail-send'></i></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>None</td>
+                            <td>1</td>
+                            <td>Barangay Improvement</td>
+                            <td>Description</td>
+                            <td>4/19/22</td>
+                            <td>None</td>
+                            <td>
+                                <a class="edit" href="#" onclick="openPedits()"><i class='bx bx-mail-send'></i></i></a>
+                            </td>
+                        </tr>   
+                    </table>
+                </div>
+                <div class="imex">
+                    <button class="button import"><i class='bx bx-import'></i></button>
+                    <button class="button import"><i class='bx bx-export' ></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="graph">
+            <div class="chart" id="sugdonutchart" style="width: 500px; height: 300px;"></div>
+        </div>
+        <div class="pedits" id="pedits">
+            <h2>Update Complaint</h2>
+            <div class="cinfo" style="text-align:left;">
+                <div class="row">
+                    <div class="col-25">
+                        <p>Category: </p>
+                    </div>
+                    <div class="col-75">
+                        <p>Barangay Improvement</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <p>Details: </p>
+                    </div>
+                    <div class="col-75">
+                        <p>Improve help distribution, it takes a lot of time to receive ayuda.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <p>Date: </p>
+                    </div>
+                    <div class="col-75">
+                        <p>4/19/22</p>
+                    </div>
+                </div>
+                <form action="#">
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="nature">Status:</label>
+                      </div>
+                      <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                      </div>
+                    </div>
+                </form>
+            </div>
+            <button type="button" class="save" onclick="closePedits()">Save</button>
+            <button type="button" class="cancel" onclick="closePedits()">Cancel</button>
+        </div>
+        <div class="blotman_content">
+            <div class="text" style="text-align: center;">Blotter Management</div>
+            <div class="content">
+                <div class="blotter_table">
+                    <div class="header">
+                        <p>Blotter List
+                            <a href="#" onclick="openPadd()">
+                                <i class='bx bxs-plus-circle' style="float: right;"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="filter">
+                        <form>
+                            <label>Filter: </label>
+                            <select id="filter" name="filter">
+                                <option value="f1">2022</option>
+                                <option value="f2">2021</option>
+                                <option value="f3">2020</option>
+                                <option value="f4">2019</option>
+                                <option value="f5">2018</option>
+                            </select>
+                            <select id="purok" name="purok">
+                                <option value="1">All</option>
+                                <option value="1">Scheduled</option>
+                                <option value="2">Unsettled</option>
+                                <option value="3">Settled</option>
+                                <option value="4">Unscheduled</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="blottab">
+                        <table class="blotters">
+                            <tr>
+                                <th>ID</th>
+                                <th>Official in Charge</th>
+                                <th>Complainant ID</th>
+                                <th>Complainee ID</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Accusation</th>
+                                <th>Details</th>
+                                <th>Settlement Schedule</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>04/20/2022</td>
+                                <td>1:47pm</td>
+                                <td>Physical Harm</td>
+                                <td>The complainee punched the complainant in the face</td>
+                                <td>04/27/2022</td>
+                                <td>Scheduled</td>
+                                <td>
+                                    <a class="set" href="#" onclick="openPsched()"><i class='bx bxs-calendar'></i></a>
+                                    <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-edit'></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>04/20/2022</td>
+                                <td>1:47pm</td>
+                                <td>Physical Harm</td>
+                                <td>The complainee punched the complainant in the face</td>
+                                <td>04/27/2022</td>
+                                <td>Scheduled</td>
+                                <td>
+                                    <a class="set" href="#" onclick="openPsched()"><i class='bx bxs-calendar'></i></a>
+                                    <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-edit'></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>04/20/2022</td>
+                                <td>1:47pm</td>
+                                <td>Physical Harm</td>
+                                <td>The complainee punched the complainant in the face</td>
+                                <td>04/27/2022</td>
+                                <td>Scheduled</td>
+                                <td>
+                                    <a class="set" href="#" onclick="openPsched()"><i class='bx bxs-calendar'></i></a>
+                                    <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-edit'></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>04/20/2022</td>
+                                <td>1:47pm</td>
+                                <td>Physical Harm</td>
+                                <td>The complainee punched the complainant in the face</td>
+                                <td>04/27/2022</td>
+                                <td>Scheduled</td>
+                                <td>
+                                    <a class="set" href="#" onclick="openPsched()"><i class='bx bxs-calendar'></i></a>
+                                    <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-edit'></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>04/20/2022</td>
+                                <td>1:47pm</td>
+                                <td>Physical Harm</td>
+                                <td>The complainee punched the complainant in the face</td>
+                                <td>04/27/2022</td>
+                                <td>Scheduled</td>
+                                <td>
+                                    <a class="set" href="#" onclick="openPsched()"><i class='bx bxs-calendar'></i></a>
+                                    <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-edit'></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>04/20/2022</td>
+                                <td>1:47pm</td>
+                                <td>Physical Harm</td>
+                                <td>The complainee punched the complainant in the face</td>
+                                <td>04/27/2022</td>
+                                <td>Scheduled</td>
+                                <td>
+                                    <a class="set" href="#" onclick="openPsched()"><i class='bx bxs-calendar'></i></a>
+                                    <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-edit'></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>04/20/2022</td>
+                                <td>1:47pm</td>
+                                <td>Physical Harm</td>
+                                <td>The complainee punched the complainant in the face</td>
+                                <td>04/27/2022</td>
+                                <td>Scheduled</td>
+                                <td>
+                                    <a class="set" href="#" onclick="openPsched()"><i class='bx bxs-calendar'></i></a>
+                                    <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-edit'></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>04/20/2022</td>
+                                <td>1:47pm</td>
+                                <td>Physical Harm</td>
+                                <td>The complainee punched the complainant in the face</td>
+                                <td>04/27/2022</td>
+                                <td>Scheduled</td>
+                                <td>
+                                    <a class="set" href="#" onclick="openPsched()"><i class='bx bxs-calendar'></i></a>
+                                    <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-edit'></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>04/20/2022</td>
+                                <td>1:47pm</td>
+                                <td>Physical Harm</td>
+                                <td>The complainee punched the complainant in the face</td>
+                                <td>04/27/2022</td>
+                                <td>Scheduled</td>
+                                <td>
+                                    <a class="set" href="#" onclick="openPsched()"><i class='bx bxs-calendar'></i></a>
+                                    <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-edit'></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>04/20/2022</td>
+                                <td>1:47pm</td>
+                                <td>Physical Harm</td>
+                                <td>The complainee punched the complainant in the face</td>
+                                <td>04/27/2022</td>
+                                <td>Scheduled</td>
+                                <td>
+                                    <a class="set" href="#" onclick="openPsched()"><i class='bx bxs-calendar'></i></a>
+                                    <a class="edit" href="#" onclick="openPedit()"><i class='bx bx-edit'></i></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="imex">
+                        <button class="button import"><i class='bx bx-import'></i></button>
+                        <button class="button import"><i class='bx bx-export' ></i></button>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card" style="background-color: rgb(78, 212, 101);">
+                        <div class="icon">
+                            <img src="../icons/settled.png">
+                        </div>
+                        <div class="num">
+                            <div>
+                                <h1>20</h1>
+                                <p>Settled</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="background-color: rgb(226, 125, 95);">
+                        <div class="icon">
+                            <img src="../icons/unsettled.png">
+                        </div>
+                        <div class="num">
+                            <div>
+                                <h1>2</h1>
+                                <p>Unsettled</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="background-color: rgb(81, 162, 255);">
+                        <div class="icon">
+                            <img src="../icons/scheduled.png">
+                        </div>
+                        <div class="num">
+                            <div>
+                                <h1>12</h1>
+                                <p>Scheduled</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="background-color: rgb(173, 129, 255);">
+                        <div class="icon">
+                            <img src="../icons/unscheduled.png">
+                        </div>
+                        <div class="num">
+                            <div>
+                                <h1>16</h1>
+                                <p>Unscheduled</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="padd" id="padd">
+                <h2>Add Blotter</h2>
+                <div class="reg_form">
+                    <form>
+                        <table style="width:100%">
+                            <tr>
+                                <th>Complainee First Name</th>
+                                <th>Complainee Last Name</th>
+                                <th>Complainee Contact#</th>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="fname" name="fname" placeholder="First Name.."></td>
+                                <td><input type="text" id="mname" name="mname" placeholder="Middle Name"></td>
+                                <td><input type="text" id="lname" name="lname" placeholder="Last Name"></td>
+                            </tr>
+                            <tr>
+                                <th>Accusation</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="lname" name="lname" placeholder="Last Name"></td>
+                                <td><input type="date" id="birthplace" name="fname" placeholder="Birthpplace"></td>
+                                <td><input type="time" id="birthplace" name="fname" placeholder="Household ID"></td>
+                            </tr>
+                            <tr>
+                                <th>Details</th>
+                                <th style="text-align: right;">Status</th>
+                                <td><select id="purokno" name="">
+                                    <option value="4">Unscheduled</option>
+                                    <option value="1">Scheduled</option>
+                                    <option value="2">Unsettled</option>
+                                    <option value="3">Settled</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><textarea id="date" name="fname"></textarea></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <button type="button" class="save" onclick="closePadd()">Save</button>
+                <button type="button" class="cancel" onclick="closePadd()">Cancel</button>
+            </div>
+            <div class="psched" id="psched">
+                <h2>Set Settlement Schedule</h2>
+                <div class="reg_form">
+                    <form>
+                        <table style="width:100%">
+                            <tr>
+                                <th>Settlement Schedule</th>
+                            </tr>
+                            <tr>
+                                <td><input type="date" id="birthplace" name="fname" placeholder="Birthpplace"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <button type="button" class="save" onclick="closePsched()">Save</button>
+                <button type="button" class="cancel" onclick="closePsched()">Cancel</button>
+            </div>
+            <div class="peditb" id="peditb">
+                <h2>Edit Blotter</h2>
+                <div class="reg_form">
+                    <form action="/action_page.php">
+                        <table style="width:100%">
+                            <tr>
+                                <th>Complainee First Name</th>
+                                <th>Complainee Last Name</th>
+                                <th>Complainee Contact#</th>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="fname" name="fname" value="Bernard" placeholder="First Name.."></td>
+                                <td><input type="text" id="mname" name="mname" value="Kabiling" placeholder="Middle Name"></td>
+                                <td><input type="text" id="lname" name="lname" value="Mazo" placeholder="Last Name"></td>
+                            </tr>
+                            <tr>
+                                <th>Accusation</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="lname" name="lname" value="Physical Harm" placeholder="Last Name"></td>
+                                <td><input type="date" id="birthplace" name="fname" placeholder="Birthpplace" value="2002-04-20"></td>
+                                <td><input type="time" id="birthplace" name="fname" placeholder="Household ID" value="13:47"></td>
+                            </tr>
+                            <tr>
+                                <th>Details</th>
+                                <th style="text-align: right;">Status</th>
+                                <td><select id="purokno" name="">
+                                    <option value="1">Scheduled</option>
+                                    <option value="2">Unsettled</option>
+                                    <option value="3">Settled</option>
+                                    <option value="4">Unscheduled</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><textarea id="date" name="fname">The complainee punched the complainant in the face</textarea></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <button type="button" class="save" onclick="closePedit()">Save</button>
+                <button type="button" class="cancel" onclick="closePedit()">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let psched = document.getElementById("psched");
+
+        function openPsched(){
+            psched.classList.add("open-psched");
+        }
+
+        function closePsched(){
+            psched.classList.remove("open-psched");
+        }
+    </script>
+    <script>
+        let pedit = document.getElementById("pedit");
+
+        function openPedit(){
+            pedit.classList.add("open-pedit");
+        }
+
+        function closePedit(){
+            pedit.classList.remove("open-pedit");
+        }
+    </script>
+    <script>
+        let peditb = document.getElementById("peditb");
+
+        function openPedit(){
+            peditb.classList.add("open-peditb");
+        }
+
+        function closePedit(){
+            peditb.classList.remove("open-peditb");
+        }
+    </script>
+    <script>
+        let padd = document.getElementById("padd");
+
+        function openPadd(){
+            padd.classList.add("open-padd");
+        }
+
+        function closePadd(){
+            padd.classList.remove("open-padd");
+        }
+    </script>
+    <script>
+        let pedits = document.getElementById("pedits");
+
+        function openPedits(){
+            pedits.classList.add("open-pedits");
+        }
+
+        function closePedits(){
+            pedits.classList.remove("open-pedits");
+        }
+    </script>
+    <script>
+        let btn_menu = document.querySelector("#btn_menu");
+        let sidebar = document.querySelector(".sidebar");
+
+        btn_menu.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
