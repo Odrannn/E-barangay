@@ -60,25 +60,42 @@
 						</td>
 					</tr>
 					<tr>
-						<th>Place Birth</td>
-						<th></th>
+						<th>Place of Birth</td>
+						<th>Civil Status</th>
 						<th>Birthday</td>
 						<th>Age</td>
 					</tr>
 					<tr>
-						<td colspan="2"><input type="text" id="birthplace" name="fname" placeholder="First Name"></td>
+						<td><input type="text" id="birthplace" name="fname" placeholder="Place of Birth"></td>
+						<td><select id="status" name="">
+							<option value="S">Single</option>
+							<option value="M">Married</option>
+							<option value="3">Windowed</option>
+							<option value="4">Divorced</option>
+							</select>
+						</td>
 						<td><input type="date" id="date" name="fname"></td>
 						<td><input type="number" id="lname" name="lname" placeholder="Age"></td>
 					</tr>
 					<tr>
-						<th>Address</th>
-						<th></th>
-						<th>Purok</th>
-						<th>Civil Status</th>
+						<th>Full Address</th>
 					</tr>
 					<tr>
-						<td colspan="2"><input type="text" id="address" name="fname" placeholder="Address"></td>
+						<th>Unit Number</th>
+						<th>Street</th>
+						<th>Purok</th>
+						<th>City/Municipality</th>
+					</tr>
+					<tr>
+						<td><input type="text" id="address" name="fname" placeholder="Unit Number"></td>
 						<td><select id="purokno" name="">
+							<option value="1">--Select--</option>
+							<option value="1">First street</option>
+							<option value="2">Second Street</option>
+							<option value="3">Third Street</option>
+							</select></td>
+						<td><select id="purokno" name="">
+							<option value="1">--Select--</option>
 							<option value="1">Purok Uno</option>
 							<option value="2">Purok Dos</option>
 							<option value="3">Purok Tres</option>
@@ -88,13 +105,14 @@
 							<option value="7">Purok Syete</option>
 							<option value="8">Purok Otso</option>
 							</select></td>
-						<td><select id="status" name="">
-							<option value="S">Single</option>
-							<option value="M">Married</option>
-							<option value="3">Windowed</option>
-							<option value="4">Divorced</option>
-							</select>
-						</td>
+						<td><input type="text" id="address" name="fname" placeholder="Municipality"></td>
+					</tr>
+					<tr>
+						<th>Zip code</th>
+					</tr>
+					<tr>
+						<td><input type="text" id="address" name="fname" placeholder="Zip code"></td>
+					</tr>
 					<tr>
 						<th>Contact Number</th>
 						<th>Email</th>
@@ -104,8 +122,20 @@
 					<tr>
 						<td><input type="number" id="fname" name="fname" placeholder="+63"></td>
 						<td><input type="text" id="mname" name="mname" placeholder="Email"></td>
-						<td><input type="text" id="lname" name="lname" placeholder="Religion"></td>
-						<td><input type="text" id="lname" name="lname" placeholder="Occupacion"></td>
+						<td><select id="status" name="">
+							<option value="S">Roman Catholic</option>
+							<option value="M">Islam</option>
+							<option value="3">Evangelicals (PCEC)</option>
+							<option value="4">Iglesia ni Cristo</option>
+							<option value="4">Non-Roman Catholic and Protestant (NCCP)</option>
+							<option value="4">Aglipayan</option>
+							<option value="4">Seventh-day Adventist</option>
+							<option value="4">Bible Baptist Church</option>
+							<option value="4">United Church of Christ in the Philippines</option>
+							<option value="4">Jehovah's Witnesses</option>
+							<option value="4">None</option>
+							</select></td>
+						<td><input type="text" id="lname" name="lname" placeholder="Occupation"></td>
 					</tr>
 					<tr>
 						<th>Educational Attainment</th>
